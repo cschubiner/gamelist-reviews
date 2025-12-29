@@ -738,75 +738,11 @@
         let currentSort = 'name';
 
         // Initialize the app
-        document.addEventListener('DOMContentLoaded', async function() {
-            await loadGames();
+        document.addEventListener('DOMContentLoaded', function() {
+            // Games are already loaded in allGames array above
+            document.getElementById('lastUpdate').textContent = new Date().getFullYear();
             filterGames();
         });
-
-        // Load games from JSON files
-        async function loadGames() {
-            const gameNames = [
-                'Super_Slime_Arena', 'The_Jackbox_Party_Pack_4', 'Monumental_Failure', 'Yargis_Space_Melee',
-                'Mount_Your_Friends', 'PICO_PARK_Classic_Edition', 'TowerClimb', 'Runbow', '12_Orbits',
-                'Cymatically_Muffed', 'Blast_Brawl_2', 'A_Gummys_Life', 'Splody', 'Party_Jousting',
-                'Block_Pooper_9', 'Board_Quizz_Adventure', 'JoustMania', 'Emoji_Charades', 'Acron_Attack_of_the_Squirrels',
-                'The_Jackbox_Party_Pack_6', 'Fish_Volleyball', 'Sea_Of_Fatness_Save_Humanity_Together', 'Photon_Rush',
-                'Table_Football_Pro', 'The_Crowded_Party_Game_Collection', 'Obliteracers', 'The_Jackbox_Party_Pack',
-                'MageQuit', 'Crate_Punks', 'Overlook_Local_multiplayer_game', 'Regular_Human_Basketball',
-                'Autogame_Deluxe', 'Super_Sketchy_Party', 'The_Jackbox_Party_Pack_9', 'The_Jackbox_Party_Pack_10',
-                'Heads_Up_Phones_Down_Edition', 'Melody_Mania', 'Party_Quiz', 'Secret_Shuffle', 'Citywars_Tower_Defense',
-                'Bingo_Hall', 'Event_Race'
-            ];
-
-            // Create inline game data instead of loading from external files
-            // This is necessary for GitHub Pages compatibility
-            allGames = [
-                {"name":"Super Slime Arena","originalComment":"Party fighting game. 2-50+ Players (local and online, 2-8 players recommended). \"Any number\" of controllers supported. Same screen.","reviewScore":70,"maxPlayers":50,"platforms":["PC","Steam"],"price":"$14.99"},
-                {"name":"The Jackbox Party Pack 4","originalComment":"5 party games, phones or tablets as controllers: Fibbage 3 (2-8 players), Survive the Internet (3-8 players), Monster Seeking Monster (3-7 players), Bracketeering (3-16 pl.), Civic Doodle (3-8 pl.)","reviewScore":82,"maxPlayers":16,"platforms":["PC","Steam","PS4","Xbox","Nintendo Switch"],"price":"$24.99"},
-                {"name":"Monumental Failure","originalComment":"Physics-based monument construction sim. Up to 16 players in Team Versus mode. Max 10 controllers, share controllers for 16 players. Team versus = split screen. Coop (up to 4 players) = shared screen.","reviewScore":70,"maxPlayers":16,"platforms":["PC","Steam"],"price":"$9.99"},
-                {"name":"Yargis - Space Melee","originalComment":"2d space shooter with various game modes. Can be played both local & online. 4 gamepads + as many players as your keyboard can handle. Same screen.","reviewScore":59,"maxPlayers":10,"platforms":["PC","Steam"],"price":"$1.49"},
-                {"name":"Mount Your Friends","originalComment":"Hot Seat weird multiplayer sporting event, up to 16 players offline, same screen (turn based)","reviewScore":90,"maxPlayers":16,"platforms":["PC","Steam"],"price":"$4.99"},
-                {"name":"PICO PARK:Classic Edition","originalComment":"A cooperative local multiplayer action puzzle game for 2-10 players. Up to 10 gamepads or phones as controllers. (See Pico Park a newer version for 8 local players + online mp without phone support.)","reviewScore":88,"maxPlayers":10,"platforms":["PC","Steam"],"price":"Free"},
-                {"name":"TowerClimb","originalComment":"A roguelike adventure platformer for up to 25 local players, split screen or single screen","reviewScore":89,"maxPlayers":25,"platforms":["PC","Steam"],"price":"Not specified"},
-                {"name":"Runbow","originalComment":"Platform racing. 9 players. 🎮 9 PS4 with SteamInput off. 🎮 9 XBox if 4 are connected before game start. (9 via reWASD. Activate virtual PS4 before game start.) ⌨ 9 on keyboard. 🖥️ Shared screen.","reviewScore":82,"maxPlayers":9,"platforms":["PC","Steam","Nintendo Switch","Wii U","Xbox","PS4"],"price":"Not specified"},
-                {"name":"12 orbits","originalComment":"Many different mini-games moving around colorful dots, up to 12 players, same screens","reviewScore":65,"maxPlayers":12,"platforms":["PC","Steam","Nintendo Switch"],"price":"$0.97"},
-                {"name":"Cymatically Muffed","originalComment":"Top-down shooter for 16 local players. 16 players on gamepads and 1 player on keyboard. Split screen.","reviewScore":70,"maxPlayers":16,"platforms":["PC","Steam","Xbox"],"price":"Not specified"},
-                {"name":"Blast Brawl 2","originalComment":"2D platform fighting. 9 local players. 🎮 9 wired PS4. SteamInput off. (9 wireless via virtual PS4 using reWASD.) 🎮 4 XBox. (9 via reWASD. Activate virtual PS4 before game start.) 🖥️ Shared screen.","reviewScore":73,"maxPlayers":9,"platforms":["PC","Steam"],"price":"$0.99"},
-                {"name":"A Gummy's Life","originalComment":"Physics based brawler for up to 16 local players. 🎮 16 PS4 with SteamInput On. 🎮 16 XBox. ⌨ 1 on keyboard. 🖥️ Shared screen.","reviewScore":50,"maxPlayers":16,"platforms":["PC","Steam","Nintendo Switch","PS4","Xbox"],"price":"$19.99"},
-                {"name":"Splody","originalComment":"Bomberman inspired game supporting \"as many local players as you can connect controllers\". Same screen.","reviewScore":40,"maxPlayers":20,"platforms":["PC","Steam","PS4"],"price":"$5.49"},
-                {"name":"Party Jousting","originalComment":"A simple one-button game where to shoot or jump on your friends, for 2-16 players, same screen, sharing a keyboard or controller.","reviewScore":91,"maxPlayers":16,"platforms":["PC","Steam"],"price":"Free To Play"},
-                {"name":"Block Pooper 9","originalComment":"Players control heads competing to collect falling points and collaborating to keep the heart from being eaten. At least 16 local players. Tested with more than 4 XInput controllers. Shared screen","reviewScore":67,"maxPlayers":16,"platforms":["PC","Steam"],"price":"Free"},
-                {"name":"Board Quizz Adventure","originalComment":"a quiz-board game for 2 teams, up to unlimited (!?) numbers of players, only 2 controllers or 1 keyboard needed. Same screen!","reviewScore":60,"maxPlayers":100,"platforms":["PC","Steam"],"price":"$5.99"},
-                {"name":"JoustMania","originalComment":"Physical party game for open spaces. Requires PlayStation Move controllers. Several game modes. Supports 7 PS Move controllers on Windows or 18+ PS Move controllers on Raspberry Pi. (No screen.)","reviewScore":92,"maxPlayers":18,"platforms":["PC","Steam","Raspberry Pi"],"price":"Free"},
-                {"name":"Emoji Charades","originalComment":"Charades type game where you give clues by typing emojis on a phone. \"Unlimited\" number of players. 1 phone as a controller, the rest participate by guessing the secret word/phrase. Shared screen.","reviewScore":75,"maxPlayers":100,"platforms":["PC","Steam","iOS","Android"],"price":"Not specified"},
-                {"name":"Acron: Attack of the Squirrels!","originalComment":"1 VR player plays as a tree whose mission is to protect the golden acorns from theiving squirrels. The squirrels are played by 2-8 mobile device players. Seperate screens.","reviewScore":70,"maxPlayers":9,"platforms":["PC","Steam","VR","Oculus","iOS","Android"],"price":"Not specified"},
-                {"name":"The Jackbox Party Pack 6","originalComment":"5 party games, phones as controllers: Trivia Murder Party 2 (1-8 players), Dictionarium (3-8 pl., Push The Button (4-10 pl.), Joke Boat (3-8 pl.), Role Models (1-6 pl.)","reviewScore":74,"maxPlayers":10,"platforms":["PC","Steam","PS4","Xbox","Nintendo Switch"],"price":"$29.99"},
-                {"name":"Fish Volleyball","originalComment":"2D Volleyball with fish. Up to 10 local players. Shared screen.","reviewScore":70,"maxPlayers":10,"platforms":["PC","Steam"],"price":"Not specified"},
-                {"name":"Sea Of Fatness: Save Humanity Together","originalComment":"Physics driven 2d (puzzle?) game. Can be played co-op with XInput gamepads and up to 10 mice. Same screen.","reviewScore":72,"maxPlayers":10,"platforms":["PC","Steam","Mac","Linux"],"price":"$2.99"},
-                {"name":"Photon Rush","originalComment":"Tron/Light cycle inspired game with power ups. 16 local players. Up to 8 controllers with support for 2 players per controller. 4 players on keyboard. Splitscreen.","reviewScore":70,"maxPlayers":16,"platforms":["PC","Steam","Mac","Linux"],"price":"$15.99"},
-                {"name":"Table Football Pro","originalComment":"Table football simulation supporting up to 22 local players. The gameplay is like the classic \"LEGO soccer table\". Same screen","reviewScore":50,"maxPlayers":22,"platforms":["PC","Steam"],"price":"$1.99"},
-                {"name":"The Crowded Party Game Collection","originalComment":"Party game with mini games for up to 10 players. Phones as controllers. Same screen.","reviewScore":59,"maxPlayers":10,"platforms":["PC","Steam"],"price":"Not specified"},
-                {"name":"Obliteracers","originalComment":"Micromachines style racing game up to 16 local players, same screen","reviewScore":67,"maxPlayers":16,"platforms":["PC","Steam","PS4","Xbox One"],"price":"Not specified"},
-                {"name":"The Jackbox Party Pack","originalComment":"5 party games, phones or tablets as controllers: YOU DON'T KNOW JACK 2015 (1-4 players), Fibbage XL (2-8 players), Drawful (3-8 players), Word Spud (2-8 players), Lie Swatter (1-100 players)","reviewScore":85,"maxPlayers":100,"platforms":["PC","Steam","PS4","PS3","Xbox One","Xbox 360","Nintendo Switch","iOS","Android","Amazon Fire TV"],"price":"Not specified"},
-                {"name":"MageQuit","originalComment":"a wizard-brawling arena game where up to 10 players (same screen) use spells and physics to do battle.","reviewScore":80,"maxPlayers":10,"platforms":["PC","Steam","Xbox One"],"price":"$5.99"},
-                {"name":"Crate Punks","originalComment":"2D side view crate throwing brawler. 2-8 local players. Modify options file for even more players. Gamepads + 2 keyboard players supported. Gamepads only work on Win10 English version. Shared screen.","reviewScore":70,"maxPlayers":8,"platforms":["PC","Steam"],"price":"$3.00"},
-                {"name":"Overlook: Local multiplayer game - up to 16 players","originalComment":"Split in 2 teams: one team is for infected robots, the other team has to find them. Up to 16 players using 8 gamepads, same screen","reviewScore":30,"maxPlayers":16,"platforms":["PC","Steam","Mac","Linux"],"price":"$14.99"},
-                {"name":"Regular Human Basketball","originalComment":"2 teams cooperate to control their team's gigantic robot basketball player with rocket jets a magnetic arm and wheels. At least 10 local players confirmed. Online play supported. Same screen.","reviewScore":93,"maxPlayers":10,"platforms":["PC","Steam","Mac","Linux"],"price":"$2.49"},
-                {"name":"Autogame Deluxe","originalComment":"One button party game. Drive a car and try not to crash into other cars. When you press your button the car turns 90 degrees and accelerates. 1-10 local players. Shared screen.","reviewScore":100,"maxPlayers":10,"platforms":["PC","Steam"],"price":"$4.49"},
-                {"name":"Super Sketchy Party","originalComment":"Drawing and guessing game. Multiple languages. 3-12 local or online players. Phones as controllers. Separate screens.","reviewScore":75,"maxPlayers":12,"platforms":["PC","Steam","Mac","Linux"],"price":"Not specified"},
-                {"name":"The Jackbox Party Pack 9","originalComment":"5 party games, phones as controllers: Fibbage 4 (2-8 players). Quixort (1-10 players). Junktopia (3-8 players). Nonsensory (3-8 players). Roomerang (4-9 players)","reviewScore":75,"maxPlayers":10,"platforms":["PC","Steam","PS4","PS5","Xbox One","Xbox Series X/S","Nintendo Switch"],"price":"$17.99"},
-                {"name":"The Jackbox Party Pack 10","originalComment":"5 party games, phones as controllers: Tee K.O. 2, FixyText, Hypnotorious, Timejinx, and Dodo Re Mi. Games support up to 9 players and 10,000 audience members.","reviewScore":75,"maxPlayers":9,"platforms":["PC","Steam","PS4","PS5","Xbox One","Xbox Series X/S","Nintendo Switch"],"price":"Not specified"},
-                {"name":"Heads Up! Phones Down Edition","originalComment":"Party game where a player tries to guess a word or phrase with the help of clues from friends. No hard limit to number of participants. Shared screen.","reviewScore":45,"maxPlayers":100,"platforms":["PC","Steam","PS4","PS5","Xbox One","Xbox Series X/S","Nintendo Switch"],"price":"$39.99"},
-                {"name":"Melody Mania","originalComment":"Singing game similar to Sing Star. No hard limit to number of mics but UI will get crowded. Android phones can also be used as microphones.Shared screen.","reviewScore":78,"maxPlayers":100,"platforms":["PC","Steam","Mac","Linux","Steam Deck"],"price":"$18.99"},
-                {"name":"Party Quiz","originalComment":"Quiz game for 8 local players + a game show host. The game includes quiz packs but you can get more via Steam Workshop or create your own. Phones as controllers. Shared screen + phones.","reviewScore":86,"maxPlayers":8,"platforms":["PC","Steam"],"price":"$2.79"},
-                {"name":"Secret Shuffle","originalComment":"Social deduction dance game for 4 to 60 players. 10 game modes. Everyone uses phones and headphones. Shared screen highlights what's happening in the game.","reviewScore":100,"maxPlayers":60,"platforms":["PC","Steam","iOS","Android"],"price":"$6.49"},
-                {"name":"Citywars Tower Defense","originalComment":"Survival tower defense. Can be played in co-op in split screen where each screen is a full instance of the game connected via network multiplayer. No hard limit to number of local players","reviewScore":80,"maxPlayers":100,"platforms":["PC","Steam"],"price":"Free"},
-                {"name":"Bingo Hall","originalComment":"Bingo for up to 50 players, either with printed cards or phones as controllers. Shared screen + phone screens.","reviewScore":78,"maxPlayers":50,"platforms":["PC","Steam"],"price":"Not specified"},
-                {"name":"Event Race","originalComment":"Top down racing for up to 30 local players. Max number of gamepads currently unknown. Phones as controllers. Shared screen.","reviewScore":95,"maxPlayers":30,"platforms":["PC","Steam"],"price":"Free"}
-            ];
-
-            document.getElementById('lastUpdate').textContent = new Date().getFullYear();
-        }
 
         function filterGames() {
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
