@@ -1,0 +1,11 @@
+{
+  "name": "Bomb Fight",
+  "originalComment": "Bomberman inspired game with 4 game modes. 12 local players. Support for: 12 gamepads. Shared controllers. 4 keyboard players. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 12,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": ""
+}

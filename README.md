@@ -1,6 +1,6 @@
 # Games List Reviews - Many Players Edition
 
-Complete database with comprehensive reviews for 198 local multiplayer games supporting many players (8+ simultaneous players).
+Complete database with comprehensive reviews for 199 local multiplayer games supporting many players (8+ simultaneous players).
 
 ## Overview
 
@@ -26,15 +26,15 @@ Browse and filter all games with the **[Interactive Game Browser](https://cschub
 
 ## Games Included
 
-Complete review data for 198 games in `/reviews/` directory, including:
+Complete review data for 199 games in `/reviews/` directory, including:
 
 - Super Slime Arena, The Jackbox Party Pack (multiple editions)
 - Mount Your Friends, PICO PARK, TowerClimb, Runbow
 - Party Jousting, Regular Human Basketball, MageQuit
 - Sea of Fatness, Photon Rush, Overlay, Stick Fight, and more
-- Plus 182 additional games covering diverse multiplayer genres
+- Plus 183 additional games covering diverse multiplayer genres
 
-See the **[Interactive Visualizer](https://cschubiner.github.io/gamelist_manyplayers/)** for the complete, sortable list of all 198 games.
+See the **[Interactive Visualizer](https://cschubiner.github.io/gamelist_manyplayers/)** for the complete, sortable list of all 199 games.
 
 ## Review Methodology
 
@@ -71,8 +71,8 @@ Reviews focus on:
 
 ```
 gamelist-reviews/
-├── reviews/              # 198 markdown review files
-├── data/                 # 198 JSON files with structured game data
+├── reviews/              # 199 markdown review files
+├── data/                 # 199 JSON files with structured game data
 ├── docs/
 │   └── index.html        # Interactive GitHub Pages visualizer
 └── README.md

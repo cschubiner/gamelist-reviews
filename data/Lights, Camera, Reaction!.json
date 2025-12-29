@@ -1,0 +1,12 @@
+{
+  "name": "Lights, Camera, Reaction!",
+  "originalComment": "VR + local multiplayer mini game based party game. 2-6 players in VR + keyboard/controller mode. 4-9 players in VR + smartphone mode. Separate screens.",
+  "reviewScore": 0,
+  "maxPlayers": 8,
+  "platforms": [
+    "PC",
+    "Steam",
+    "VR"
+  ],
+  "price": ""
+}
