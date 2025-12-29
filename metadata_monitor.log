@@ -1,0 +1,201 @@
+============================================================
+METADATA EXTRACTION MONITORING SERVICE
+============================================================
+Monitoring /Users/canal/gamelist_manyplayers/reviews/
+Output directory: /Users/canal/gamelist_manyplayers/data/
+Press Ctrl+C to stop
+============================================================
+Loading original comments and prices...
+Starting with 76 already processed files
+
+[Iteration 1] Found 11 new file(s) to process:
+  ✓ Carrot Commotion.md -> Carrot Commotion.json
+  ✓ Ewephoria.md -> Ewephoria.json
+  ✓ PICOPARK.md -> PICOPARK.json
+  ✓ ProjectPlanetEarthVsHumanity.md -> ProjectPlanetEarthVsHumanity.json
+  ✓ RetroWar 8-bit Party Battle.md -> RetroWar 8-bit Party Battle.json
+  ✓ Spaceteam The Second Dimension.md -> Spaceteam The Second Dimension.json
+  ✓ The Jackbox Party Pack 5.md -> The Jackbox Party Pack 5.json
+  ✓ The Jackbox Party Starter.md -> The Jackbox Party Starter.json
+  ✓ TheLivingDungeon.md -> TheLivingDungeon.json
+  ✓ Wild Honesty A party game for deeper conversations.md -> Wild Honesty A party game for deeper conversations.json
+  ✓ Wordabeasts.md -> Wordabeasts.json
+
+[Iteration 2] Found 1 new file(s) to process:
+  ✓ Pixel Fishies.md -> Pixel Fishies.json
+
+[Iteration 3] Found 2 new file(s) to process:
+  ✓ SnackHunter.md -> SnackHunter.json
+  ✓ The Jackbox Party Pack 3.md -> The Jackbox Party Pack 3.json
+
+[Iteration 4] Found 1 new file(s) to process:
+  ✓ TheYouQuiz.md -> TheYouQuiz.json
+
+[Iteration 6] Found 1 new file(s) to process:
+  ✓ Hardtrace.md -> Hardtrace.json
+
+[Iteration 9] Found 4 new file(s) to process:
+  ✓ AsteroidsMultiplayer.md -> AsteroidsMultiplayer.json
+  ✓ Awkward2ThePartyGameOfSavageSecrets.md -> Awkward2ThePartyGameOfSavageSecrets.json
+  ✓ Dog Fight Super Ultra Deluxe.md -> Dog Fight Super Ultra Deluxe.json
+  ✓ Spaceteam VR.md -> Spaceteam VR.json
+[Iteration 10] No new files. Total processed: 96
+
+[Iteration 11] Found 4 new file(s) to process:
+  ✓ Dominions - Priests, Prophets & Pretenders.md -> Dominions - Priests, Prophets & Pretenders.json
+  ✓ Dominions 2 - The Ascension Wars.md -> Dominions 2 - The Ascension Wars.json
+  ✓ Radiis.md -> Radiis.json
+  ✓ Tabletop Simulator.md -> Tabletop Simulator.json
+
+[Iteration 13] Found 1 new file(s) to process:
+  ✓ PaperPirates.md -> PaperPirates.json
+
+[Iteration 14] Found 1 new file(s) to process:
+  ✓ TheJackboxSurveyScramble.md -> TheJackboxSurveyScramble.json
+
+[Iteration 15] Found 6 new file(s) to process:
+  ✓ Clue Cluedo Classic Edition.md -> Clue Cluedo Classic Edition.json
+  ✓ FurAndFists.md -> FurAndFists.json
+  ✓ Just Dance 2017.md -> Just Dance 2017.json
+  ✓ The Jackbox Party Pack 2.md -> The Jackbox Party Pack 2.json
+  ✓ Ticket to Ride.md -> Ticket to Ride.json
+  ✓ Yesterdays News.md -> Yesterdays News.json
+
+[Iteration 16] Found 1 new file(s) to process:
+  ✓ Fibbage XL.md -> Fibbage XL.json
+
+[Iteration 17] Found 1 new file(s) to process:
+  ✓ RiffTraxTheGame.md -> RiffTraxTheGame.json
+
+[Iteration 18] Found 1 new file(s) to process:
+  ✓ ANYKEY.md -> ANYKEY.json
+[Iteration 20] No new files. Total processed: 111
+
+[Iteration 21] Found 2 new file(s) to process:
+  ✓ TheGifGame.md -> TheGifGame.json
+  ✓ UpToPar.md -> UpToPar.json
+
+[Iteration 22] Found 2 new file(s) to process:
+  ✓ Its Quiz Time.md -> Its Quiz Time.json
+  ✓ MarkiGameCollection.md -> MarkiGameCollection.json
+
+[Iteration 27] Found 2 new file(s) to process:
+  ✓ CouncilOfMagesThePartyGame.md -> CouncilOfMagesThePartyGame.json
+  ✓ Sunken.md -> Sunken.json
+
+[Iteration 28] Found 1 new file(s) to process:
+  ✓ SpringDogs.md -> SpringDogs.json
+
+[Iteration 29] Found 1 new file(s) to process:
+  ✓ Lights Camera Reaction IRL Edition.md -> Lights Camera Reaction IRL Edition.json
+
+[Iteration 30] Found 1 new file(s) to process:
+  ✓ SpeedRunners.md -> SpeedRunners.json
+
+[Iteration 31] Found 1 new file(s) to process:
+  ✓ DeviationGame.md -> DeviationGame.json
+
+[Iteration 32] Found 5 new file(s) to process:
+  ✓ Papas Quiz.md -> Papas Quiz.json
+  ✓ Space Bomb.md -> Space Bomb.json
+  ✓ Survivors of Borridor.md -> Survivors of Borridor.json
+  ✓ The Jackbox Party Pack 11.md -> The Jackbox Party Pack 11.json
+  ✓ telAIphone.md -> telAIphone.json
+
+[Iteration 33] Found 4 new file(s) to process:
+  ✓ Conquest of Elysium 5.md -> Conquest of Elysium 5.json
+  ✓ Sid Meier's Civilization IV.md -> Sid Meier's Civilization IV.json
+  ✓ Sid Meier's Civilization V.md -> Sid Meier's Civilization V.json
+  ✓ Sid Meier's Civilization VI.md -> Sid Meier's Civilization VI.json
+
+[Iteration 34] Found 1 new file(s) to process:
+  ✓ Quiz Quest.md -> Quiz Quest.json
+
+[Iteration 35] Found 1 new file(s) to process:
+  ✓ ROUNDS.md -> ROUNDS.json
+
+[Iteration 36] Found 1 new file(s) to process:
+  ✓ TrafficJams.md -> TrafficJams.json
+
+[Iteration 37] Found 2 new file(s) to process:
+  ✓ Selfie Games [TV] A Multiplayer Couch Party Game.md -> Selfie Games [TV] A Multiplayer Couch Party Game.json
+  ✓ ThePlanetologist.md -> ThePlanetologist.json
+[Iteration 40] No new files. Total processed: 135
+
+[Iteration 41] Found 2 new file(s) to process:
+  ✓ Abomin-Agency.md -> Abomin-Agency.json
+  ✓ Turing Quest.md -> Turing Quest.json
+
+[Iteration 43] Found 1 new file(s) to process:
+  ✓ ClickOnSpannersTogether.md -> ClickOnSpannersTogether.json
+
+[Iteration 45] Found 1 new file(s) to process:
+  ✓ SunsetRacing.md -> SunsetRacing.json
+
+[Iteration 46] Found 2 new file(s) to process:
+  ✓ BeamNG.drive.md -> BeamNG.drive.json
+  ✓ KingOfTheCastle.md -> KingOfTheCastle.json
+
+[Iteration 48] Found 1 new file(s) to process:
+  ✓ The Jackbox Naughty Pack.md -> The Jackbox Naughty Pack.json
+
+[Iteration 49] Found 1 new file(s) to process:
+  ✓ ClickOnLadybugsTogether.md -> ClickOnLadybugsTogether.json
+
+[Iteration 50] Found 11 new file(s) to process:
+  ✓ Aiball.md -> Aiball.json
+  ✓ Assimilate! (A Party Game).md -> Assimilate! (A Party Game).json
+  ✓ Drink More Glurp.md -> Drink More Glurp.json
+  ✓ Groupthink.md -> Groupthink.json
+  ✓ Partition Sector.md -> Partition Sector.json
+  ✓ Plunder Panic.md -> Plunder Panic.json
+  ✓ Potato Party Hash It Out.md -> Potato Party Hash It Out.json
+  ✓ Republic of Jungle.md -> Republic of Jungle.json
+  ✓ Space Debris.md -> Space Debris.json
+  ✓ The Jackbox Party Pack 8.md -> The Jackbox Party Pack 8.json
+  ✓ What The Dub.md -> What The Dub.json
+
+[Iteration 51] Found 6 new file(s) to process:
+  ✓ Christmas Movie Bingo.md -> Christmas Movie Bingo.json
+  ✓ DuckHunt - Missouri Kidz.md -> DuckHunt - Missouri Kidz.json
+  ✓ DuckHunt - Missouri.md -> DuckHunt - Missouri.json
+  ✓ Horror Movie Bingo.md -> Horror Movie Bingo.json
+  ✓ PengoRoyale.md -> PengoRoyale.json
+  ✓ Spell Swap.md -> Spell Swap.json
+
+[Iteration 53] Found 1 new file(s) to process:
+  ✓ GrabYourFriends.md -> GrabYourFriends.json
+
+[Iteration 54] Found 4 new file(s) to process:
+  ✓ ClickOnBellsTogether.md -> ClickOnBellsTogether.json
+  ✓ Crazy Farm VRGROUND.md -> Crazy Farm VRGROUND.json
+  ✓ F2DSteerToPersevere.md -> F2DSteerToPersevere.json
+  ✓ Hotlap Heroes.md -> Hotlap Heroes.json
+
+[Iteration 55] Found 4 new file(s) to process:
+  ✓ Conquest of Elysium 4.md -> Conquest of Elysium 4.json
+  ✓ Quiplash 2 InterLASHional.md -> Quiplash 2 InterLASHional.json
+  ✓ Use Your Words 2.md -> Use Your Words 2.json
+  ✓ Verse Surf.md -> Verse Surf.json
+
+[Iteration 58] Found 1 new file(s) to process:
+  ✓ Unfriend.md -> Unfriend.json
+
+[Iteration 60] Found 2 new file(s) to process:
+  ✓ ClickOnCandyTogether.md -> ClickOnCandyTogether.json
+  ✓ QR Controller.md -> QR Controller.json
+
+[Iteration 61] Found 1 new file(s) to process:
+  ✓ SpiderHeck.md -> SpiderHeck.json
+
+[Iteration 62] Found 1 new file(s) to process:
+  ✓ Constructionary.md -> Constructionary.json
+
+[Iteration 63] Found 1 new file(s) to process:
+  ✓ JabbyGamesPack1.md -> JabbyGamesPack1.json
+
+[Iteration 65] Found 1 new file(s) to process:
+  ✓ ClickOnLanternsTogether.md -> ClickOnLanternsTogether.json
+
+[Iteration 67] Found 1 new file(s) to process:
+  ✓ Use Your Words.md -> Use Your Words.json
