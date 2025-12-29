@@ -14,7 +14,7 @@ This repository contains detailed review summaries for games that support large 
 
 ## Interactive Visualizer
 
-Browse and filter all games with the **[Interactive Game Browser](https://cschubiner.github.io/gamelist-reviews/)** hosted on GitHub Pages!
+Browse and filter all games with the **[Interactive Game Browser](https://cschubiner.github.io/gamelist_manyplayers/)** hosted on GitHub Pages!
 
 **Features:**
 - Search games by name
@@ -33,7 +33,7 @@ Complete review data for 42 games in `/reviews/` directory, including:
 - Party Jousting, Regular Human Basketball, MageQuit
 - Sea of Fatness, Photon Rush, Overlay, Stick Fight, and more
 
-See the **[Interactive Visualizer](https://cschubiner.github.io/gamelist-reviews/)** for the complete, sortable list of all 42 games.
+See the **[Interactive Visualizer](https://cschubiner.github.io/gamelist_manyplayers/)** for the complete, sortable list of all 42 games.
 
 ## Review Methodology
 
