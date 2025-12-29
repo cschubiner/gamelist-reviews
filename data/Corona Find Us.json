@@ -1,0 +1,11 @@
+{
+  "name": "Corona Find Us",
+  "originalComment": "Nanobots fight viruses and bacteria. 1 to 16 local players or more. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 16,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": "$3.99"
+}
