@@ -12,18 +12,28 @@ This repository contains detailed review summaries for games that support large 
 - **Overall Reception**: Critical scores, consensus, and recommendations
 - **Sources**: Links to full reviews and metadata
 
+## Interactive Visualizer
+
+Browse and filter all games with the **[Interactive Game Browser](https://cschubiner.github.io/gamelist-reviews/)** hosted on GitHub Pages!
+
+**Features:**
+- Search games by name
+- Filter by minimum player count (8-100+ players)
+- Filter by minimum review score (0-100)
+- Multi-select platform filtering (PC, PS4, Xbox, Nintendo Switch)
+- Sort by name, review score, or player count
+- View original game descriptions and pricing information
+
 ## Games Included
 
-1. [Super Slime Arena](./reviews/Super_Slime_Arena.md) - 2-50+ players party fighter
-2. [The Jackbox Party Pack 4](./reviews/The_Jackbox_Party_Pack_4.md) - 3-16 players phone-based party games
-3. [Monumental Failure](./reviews/Monumental_Failure.md) - 2-16 players physics-based construction
-4. [Yargis - Space Melee](./reviews/Yargis_Space_Melee.md) - Physics-based space combat
-5. [Mount Your Friends](./reviews/Mount_Your_Friends.md) - 4+ players competitive climbing
-6. [PICO PARK: Classic Edition](./reviews/PICO_PARK_Classic_Edition.md) - 2-10 players cooperative puzzles
-7. [TowerClimb](./reviews/TowerClimb.md) - Up to 6 players roguelike platformer
-8. [Runbow](./reviews/Runbow.md) - Up to 9 players party platformer
-9. [12 Orbits](./reviews/12_Orbits.md) - Up to 12 players minimalist party game
-10. [Cymatically Muffed](./reviews/Cymatically_Muffed.md) - Up to 16 players top-down shooter
+Complete review data for 42 games in `/reviews/` directory, including:
+
+- Super Slime Arena, The Jackbox Party Pack (multiple editions)
+- Mount Your Friends, PICO PARK, TowerClimb, Runbow
+- Party Jousting, Regular Human Basketball, MageQuit
+- Sea of Fatness, Photon Rush, Overlay, Stick Fight, and more
+
+See the **[Interactive Visualizer](https://cschubiner.github.io/gamelist-reviews/)** for the complete, sortable list of all 42 games.
 
 ## Review Methodology
 
@@ -56,14 +66,49 @@ Reviews focus on:
 - **Super Slime Arena** - Quirky charm despite limited content
 - **Monumental Failure** - Excellent cooperative chaos
 
+## Directory Structure
+
+```
+gamelist-reviews/
+├── reviews/              # 42 markdown review files
+├── data/                 # 42 JSON files with structured game data
+├── docs/
+│   └── index.html        # Interactive GitHub Pages visualizer
+└── README.md
+```
+
 ## Format
 
+### Markdown Reviews (`/reviews/`)
+
 Each review file contains:
-- Overview section with game details
-- Multiple sections covering gameplay, mechanics, and fun factor
-- Player count experience breakdown
-- Critical consensus with individual review scores
-- Sources with direct links
+- Gameplay & Mechanics section with detailed system breakdown
+- Fun Factor section covering player experience
+- Player Count Experience analysis
+- Overall Reception with critical scores and consensus
+- Sources with direct links to original reviews
+
+### JSON Data Files (`/data/`)
+
+Structured data for each game with:
+- `name`: Game title
+- `originalComment`: Description from source (gameslist.txt)
+- `reviewScore`: 0-100 critical score
+- `maxPlayers`: Maximum simultaneous players
+- `platforms`: Array of platform names (PC, PS4, Xbox, Nintendo Switch, etc.)
+- `price`: Listed price or "Free"/"Not specified"
+
+Example:
+```json
+{
+  "name": "Mount Your Friends",
+  "originalComment": "Hot Seat weird multiplayer sporting event, up to 16 players offline, same screen (turn based)",
+  "reviewScore": 90,
+  "maxPlayers": 16,
+  "platforms": ["PC", "Steam"],
+  "price": "$4.99"
+}
+```
 
 ## Updates
 
