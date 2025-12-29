@@ -1,6 +1,6 @@
 # Games List Reviews - Many Players Edition
 
-Complete database with comprehensive reviews for 203 local multiplayer games supporting many players (8+ simultaneous players).
+Complete database with comprehensive reviews for 204 local multiplayer games supporting many players (8+ simultaneous players).
 
 ## Overview
 
@@ -32,9 +32,9 @@ Complete review data for 202 games in `/reviews/` directory, including:
 - Mount Your Friends, PICO PARK, TowerClimb, Runbow
 - Party Jousting, Regular Human Basketball, MageQuit
 - Sea of Fatness, Photon Rush, Overlay, Stick Fight, and more
-- Plus 187 additional games covering diverse multiplayer genres
+- Plus 188 additional games covering diverse multiplayer genres
 
-See the **[Interactive Visualizer](https://cschubiner.github.io/gamelist_manyplayers/)** for the complete, sortable list of all 203 games.
+See the **[Interactive Visualizer](https://cschubiner.github.io/gamelist_manyplayers/)** for the complete, sortable list of all 204 games.
 
 ## Review Methodology
 
@@ -71,8 +71,8 @@ Reviews focus on:
 
 ```
 gamelist-reviews/
-├── reviews/              # 203 markdown review files
-├── data/                 # 203 JSON files with structured game data
+├── reviews/              # 204 markdown review files
+├── data/                 # 204 JSON files with structured game data
 ├── docs/
 │   └── index.html        # Interactive GitHub Pages visualizer
 └── README.md

@@ -1,0 +1,11 @@
+{
+  "name": "Star Escape",
+  "originalComment": "Planet-hopper space-racer for up to 10 local players. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 10,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": "$4.99"
+}
