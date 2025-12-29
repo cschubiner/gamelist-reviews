@@ -1,0 +1,8 @@
+{
+  "name": "Melody Mania",
+  "originalComment": "Singing game similar to Sing Star. No hard limit to number of mics but UI will get crowded. Android phones can also be used as microphones.Shared screen.",
+  "reviewScore": 78,
+  "maxPlayers": 100,
+  "platforms": ["PC", "Steam", "Mac", "Linux", "Steam Deck"],
+  "price": "$18.99"
+}

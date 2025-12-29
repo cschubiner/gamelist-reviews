@@ -1,0 +1,8 @@
+{
+  "name": "Yargis - Space Melee",
+  "originalComment": "2d space shooter with various game modes. Can be played both local & online. 4 gamepads + as many players as your keyboard can handle. Same screen.",
+  "reviewScore": 59,
+  "maxPlayers": 10,
+  "platforms": ["PC", "Steam"],
+  "price": "$1.49"
+}

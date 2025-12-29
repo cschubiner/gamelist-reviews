@@ -1,0 +1,8 @@
+{
+  "name": "The Jackbox Party Pack 9",
+  "originalComment": "5 party games, phones as controllers: Fibbage 4 (2-8 players). Quixort (1-10 players). Junktopia (3-8 players). Nonsensory (3-8 players). Roomerang (4-9 players)",
+  "reviewScore": 75,
+  "maxPlayers": 10,
+  "platforms": ["PC", "Steam", "PS4", "PS5", "Xbox One", "Xbox Series X/S", "Nintendo Switch"],
+  "price": "$17.99"
+}

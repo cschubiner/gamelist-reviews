@@ -1,0 +1,8 @@
+{
+  "name": "MageQuit",
+  "originalComment": "a wizard-brawling arena game where up to 10 players (same screen) use spells and physics to do battle.",
+  "reviewScore": 80,
+  "maxPlayers": 10,
+  "platforms": ["PC", "Steam", "Xbox One"],
+  "price": "$5.99"
+}

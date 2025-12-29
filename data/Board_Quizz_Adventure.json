@@ -1,0 +1,8 @@
+{
+  "name": "Board Quizz Adventure",
+  "originalComment": "a quiz-board game for 2 teams, up to unlimited (!?) numbers of players, only 2 controllers or 1 keyboard needed. Same screen!",
+  "reviewScore": 60,
+  "maxPlayers": 100,
+  "platforms": ["PC", "Steam"],
+  "price": "$5.99"
+}

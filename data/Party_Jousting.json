@@ -1,0 +1,8 @@
+{
+  "name": "Party Jousting",
+  "originalComment": "A simple one-button game where to shoot or jump on your friends, for 2-16 players, same screen, sharing a keyboard or controller.",
+  "reviewScore": 91,
+  "maxPlayers": 16,
+  "platforms": ["PC", "Steam"],
+  "price": "Free To Play"
+}

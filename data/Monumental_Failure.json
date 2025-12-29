@@ -1,0 +1,8 @@
+{
+  "name": "Monumental Failure",
+  "originalComment": "Physics-based monument construction sim. Up to 16 players in Team Versus mode. Max 10 controllers, share controllers for 16 players. Team versus = split screen. Coop (up to 4 players) = shared screen.",
+  "reviewScore": 70,
+  "maxPlayers": 16,
+  "platforms": ["PC", "Steam"],
+  "price": "$9.99"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "TowerClimb",
+  "originalComment": "A roguelike adventure platformer for up to 25 local players, split screen or single screen",
+  "reviewScore": 89,
+  "maxPlayers": 25,
+  "platforms": ["PC", "Steam"],
+  "price": "Not specified"
+}

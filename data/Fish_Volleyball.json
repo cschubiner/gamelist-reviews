@@ -1,0 +1,8 @@
+{
+  "name": "Fish Volleyball",
+  "originalComment": "2D Volleyball with fish. Up to 10 local players. Shared screen.",
+  "reviewScore": 70,
+  "maxPlayers": 10,
+  "platforms": ["PC", "Steam"],
+  "price": "Not specified"
+}

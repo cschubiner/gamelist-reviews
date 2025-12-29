@@ -1,0 +1,8 @@
+{
+  "name": "Super Sketchy Party",
+  "originalComment": "Drawing and guessing game. Multiple languages. 3-12 local or online players. Phones as controllers. Separate screens.",
+  "reviewScore": 75,
+  "maxPlayers": 12,
+  "platforms": ["PC", "Steam", "Mac", "Linux"],
+  "price": "Not specified"
+}

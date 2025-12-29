@@ -1,0 +1,8 @@
+{
+  "name": "Event Race",
+  "originalComment": "Top down racing for up to 30 local players. Max number of gamepads currently unknown. Phones as controllers. Shared screen.",
+  "reviewScore": 95,
+  "maxPlayers": 30,
+  "platforms": ["PC", "Steam"],
+  "price": "Free"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Citywars Tower Defense",
+  "originalComment": "Survival tower defense. Can be played in co-op in split screen where each screen is a full instance of the game connected via network multiplayer. No hard limit to number of local players",
+  "reviewScore": 80,
+  "maxPlayers": 100,
+  "platforms": ["PC", "Steam"],
+  "price": "Free"
+}

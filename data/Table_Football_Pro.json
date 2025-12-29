@@ -1,0 +1,8 @@
+{
+  "name": "Table Football Pro",
+  "originalComment": "Table football simulation supporting up to 22 local players. The gameplay is like the classic \"LEGO soccer table\". Same screen",
+  "reviewScore": 50,
+  "maxPlayers": 22,
+  "platforms": ["PC", "Steam"],
+  "price": "$1.99"
+}

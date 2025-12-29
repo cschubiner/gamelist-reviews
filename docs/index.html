@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Games Browser | 8+ Players</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            animation: fadeInDown 0.6s ease-out;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            font-size: 0.95em;
+            opacity: 0.85;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .stat-number {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .controls-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .controls-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .controls-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .control-label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            padding: 10px 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 0.95em;
+            transition: border-color 0.3s ease;
+            font-family: inherit;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.95em;
+            transition: all 0.3s ease;
+            flex: 1;
+        }
+
+        .btn-search {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-search:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-reset {
+            background: #f5f5f5;
+            color: #333;
+            border: 2px solid #e0e0e0;
+        }
+
+        .btn-reset:hover {
+            background: #efefef;
+        }
+
+        .platform-selector {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .platform-checkbox {
+            display: none;
+        }
+
+        .platform-label {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 12px;
+            background: #f0f0f0;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+            user-select: none;
+        }
+
+        .platform-checkbox:checked + .platform-label {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .platform-label:hover {
+            border-color: #667eea;
+        }
+
+        .results-section {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .results-title {
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+
+        .sort-controls {
+            display: flex;
+            gap: 10px;
+        }
+
+        .sort-btn {
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+        }
+
+        .sort-btn.active {
+            background: white;
+            color: #667eea;
+            border-color: white;
+        }
+
+        .sort-btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .game-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .game-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .game-title {
+            font-size: 1.2em;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .game-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.9em;
+        }
+
+        .score-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 1em;
+        }
+
+        .score-badge.high {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        }
+
+        .score-badge.medium {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .score-badge.low {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+        }
+
+        .players-badge,
+        .price-badge {
+            background: #f0f0f0;
+            color: #333;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+
+        .game-comment {
+            color: #666;
+            font-size: 0.9em;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            padding: 12px;
+            background: #f9f9f9;
+            border-left: 3px solid #667eea;
+            border-radius: 4px;
+        }
+
+        .platforms {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 15px;
+        }
+
+        .platform-tag {
+            background: #e8eef9;
+            color: #667eea;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        .no-results-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .no-results-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .no-results-text {
+            opacity: 0.9;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .mobile-warning {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+            padding: 12px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .controls-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .games-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                gap: 20px;
+            }
+
+            .sort-controls {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .sort-btn {
+                width: 100%;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .footer a:hover {
+            border-bottom-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Multiplayer Games Browser</h1>
+            <p class="subtitle">Discover the best games for 8+ local multiplayers</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalGames">42</span>
+                    <span>Games Reviewed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">8-100</span>
+                    <span>Max Players Range</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span>Platforms</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="controls-section">
+            <div class="controls-title">🔍 Filters & Search</div>
+
+            <div class="controls-grid">
+                <div class="control-group">
+                    <label class="control-label">Game Name</label>
+                    <input type="text" id="searchInput" placeholder="e.g., Jackbox, Stick Fight...">
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Min Players</label>
+                    <input type="number" id="minPlayers" min="2" max="100" value="8" placeholder="Minimum players">
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Min Review Score</label>
+                    <input type="number" id="minScore" min="0" max="100" value="0" placeholder="Minimum score (0-100)">
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Platforms</label>
+                    <div class="platform-selector">
+                        <input type="checkbox" id="pc" value="PC" class="platform-checkbox">
+                        <label for="pc" class="platform-label">💻 PC</label>
+
+                        <input type="checkbox" id="ps4" value="PS4" class="platform-checkbox">
+                        <label for="ps4" class="platform-label">🎮 PS4</label>
+
+                        <input type="checkbox" id="xbox" value="Xbox" class="platform-checkbox">
+                        <label for="xbox" class="platform-label">🎮 Xbox</label>
+
+                        <input type="checkbox" id="switch" value="Nintendo Switch" class="platform-checkbox">
+                        <label for="switch" class="platform-label">🎮 Switch</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn-search" onclick="filterGames()">🔍 Search & Filter</button>
+                <button class="btn-reset" onclick="resetFilters()">↺ Reset All</button>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <div class="results-header">
+                <div class="results-title">📊 Results <span id="resultCount">42</span></div>
+                <div class="sort-controls">
+                    <button class="sort-btn active" onclick="sortBy('name')">Sort A-Z</button>
+                    <button class="sort-btn" onclick="sortBy('score')">⭐ Score</button>
+                    <button class="sort-btn" onclick="sortBy('players')">👥 Players</button>
+                </div>
+            </div>
+            <div class="games-grid" id="gamesContainer"></div>
+        </div>
+
+        <div class="footer">
+            <p>🎯 Built for finding the perfect game for your next game night</p>
+            <p style="margin-top: 10px; font-size: 0.85em;">
+                <a href="https://github.com/cschubiner/gamelist-reviews">View on GitHub</a> |
+                Last updated: <span id="lastUpdate">2025</span>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Game data will be loaded here
+        let allGames = [];
+        let filteredGames = [];
+        let currentSort = 'name';
+
+        // Initialize the app
+        document.addEventListener('DOMContentLoaded', async function() {
+            await loadGames();
+            filterGames();
+        });
+
+        // Load games from JSON files
+        async function loadGames() {
+            const gameNames = [
+                'Super_Slime_Arena', 'The_Jackbox_Party_Pack_4', 'Monumental_Failure', 'Yargis_Space_Melee',
+                'Mount_Your_Friends', 'PICO_PARK_Classic_Edition', 'TowerClimb', 'Runbow', '12_Orbits',
+                'Cymatically_Muffed', 'Blast_Brawl_2', 'A_Gummys_Life', 'Splody', 'Party_Jousting',
+                'Block_Pooper_9', 'Board_Quizz_Adventure', 'JoustMania', 'Emoji_Charades', 'Acron_Attack_of_the_Squirrels',
+                'The_Jackbox_Party_Pack_6', 'Fish_Volleyball', 'Sea_Of_Fatness_Save_Humanity_Together', 'Photon_Rush',
+                'Table_Football_Pro', 'The_Crowded_Party_Game_Collection', 'Obliteracers', 'The_Jackbox_Party_Pack',
+                'MageQuit', 'Crate_Punks', 'Overlook_Local_multiplayer_game', 'Regular_Human_Basketball',
+                'Autogame_Deluxe', 'Super_Sketchy_Party', 'The_Jackbox_Party_Pack_9', 'The_Jackbox_Party_Pack_10',
+                'Heads_Up_Phones_Down_Edition', 'Melody_Mania', 'Party_Quiz', 'Secret_Shuffle', 'Citywars_Tower_Defense',
+                'Bingo_Hall', 'Event_Race'
+            ];
+
+            // Create inline game data instead of loading from external files
+            // This is necessary for GitHub Pages compatibility
+            allGames = [
+                {"name":"Super Slime Arena","originalComment":"Party fighting game. 2-50+ Players (local and online, 2-8 players recommended). \"Any number\" of controllers supported. Same screen.","reviewScore":70,"maxPlayers":50,"platforms":["PC","Steam"],"price":"$14.99"},
+                {"name":"The Jackbox Party Pack 4","originalComment":"5 party games, phones or tablets as controllers: Fibbage 3 (2-8 players), Survive the Internet (3-8 players), Monster Seeking Monster (3-7 players), Bracketeering (3-16 pl.), Civic Doodle (3-8 pl.)","reviewScore":82,"maxPlayers":16,"platforms":["PC","Steam","PS4","Xbox","Nintendo Switch"],"price":"$24.99"},
+                {"name":"Monumental Failure","originalComment":"Physics-based monument construction sim. Up to 16 players in Team Versus mode. Max 10 controllers, share controllers for 16 players. Team versus = split screen. Coop (up to 4 players) = shared screen.","reviewScore":70,"maxPlayers":16,"platforms":["PC","Steam"],"price":"$9.99"},
+                {"name":"Yargis - Space Melee","originalComment":"2d space shooter with various game modes. Can be played both local & online. 4 gamepads + as many players as your keyboard can handle. Same screen.","reviewScore":59,"maxPlayers":10,"platforms":["PC","Steam"],"price":"$1.49"},
+                {"name":"Mount Your Friends","originalComment":"Hot Seat weird multiplayer sporting event, up to 16 players offline, same screen (turn based)","reviewScore":90,"maxPlayers":16,"platforms":["PC","Steam"],"price":"$4.99"},
+                {"name":"PICO PARK:Classic Edition","originalComment":"A cooperative local multiplayer action puzzle game for 2-10 players. Up to 10 gamepads or phones as controllers. (See Pico Park a newer version for 8 local players + online mp without phone support.)","reviewScore":88,"maxPlayers":10,"platforms":["PC","Steam"],"price":"Free"},
+                {"name":"TowerClimb","originalComment":"A roguelike adventure platformer for up to 25 local players, split screen or single screen","reviewScore":89,"maxPlayers":25,"platforms":["PC","Steam"],"price":"Not specified"},
+                {"name":"Runbow","originalComment":"Platform racing. 9 players. 🎮 9 PS4 with SteamInput off. 🎮 9 XBox if 4 are connected before game start. (9 via reWASD. Activate virtual PS4 before game start.) ⌨ 9 on keyboard. 🖥️ Shared screen.","reviewScore":82,"maxPlayers":9,"platforms":["PC","Steam","Nintendo Switch","Wii U","Xbox","PS4"],"price":"Not specified"},
+                {"name":"12 orbits","originalComment":"Many different mini-games moving around colorful dots, up to 12 players, same screens","reviewScore":65,"maxPlayers":12,"platforms":["PC","Steam","Nintendo Switch"],"price":"$0.97"},
+                {"name":"Cymatically Muffed","originalComment":"Top-down shooter for 16 local players. 16 players on gamepads and 1 player on keyboard. Split screen.","reviewScore":70,"maxPlayers":16,"platforms":["PC","Steam","Xbox"],"price":"Not specified"},
+                {"name":"Blast Brawl 2","originalComment":"2D platform fighting. 9 local players. 🎮 9 wired PS4. SteamInput off. (9 wireless via virtual PS4 using reWASD.) 🎮 4 XBox. (9 via reWASD. Activate virtual PS4 before game start.) 🖥️ Shared screen.","reviewScore":73,"maxPlayers":9,"platforms":["PC","Steam"],"price":"$0.99"},
+                {"name":"A Gummy's Life","originalComment":"Physics based brawler for up to 16 local players. 🎮 16 PS4 with SteamInput On. 🎮 16 XBox. ⌨ 1 on keyboard. 🖥️ Shared screen.","reviewScore":50,"maxPlayers":16,"platforms":["PC","Steam","Nintendo Switch","PS4","Xbox"],"price":"$19.99"},
+                {"name":"Splody","originalComment":"Bomberman inspired game supporting \"as many local players as you can connect controllers\". Same screen.","reviewScore":40,"maxPlayers":20,"platforms":["PC","Steam","PS4"],"price":"$5.49"},
+                {"name":"Party Jousting","originalComment":"A simple one-button game where to shoot or jump on your friends, for 2-16 players, same screen, sharing a keyboard or controller.","reviewScore":91,"maxPlayers":16,"platforms":["PC","Steam"],"price":"Free To Play"},
+                {"name":"Block Pooper 9","originalComment":"Players control heads competing to collect falling points and collaborating to keep the heart from being eaten. At least 16 local players. Tested with more than 4 XInput controllers. Shared screen","reviewScore":67,"maxPlayers":16,"platforms":["PC","Steam"],"price":"Free"},
+                {"name":"Board Quizz Adventure","originalComment":"a quiz-board game for 2 teams, up to unlimited (!?) numbers of players, only 2 controllers or 1 keyboard needed. Same screen!","reviewScore":60,"maxPlayers":100,"platforms":["PC","Steam"],"price":"$5.99"},
+                {"name":"JoustMania","originalComment":"Physical party game for open spaces. Requires PlayStation Move controllers. Several game modes. Supports 7 PS Move controllers on Windows or 18+ PS Move controllers on Raspberry Pi. (No screen.)","reviewScore":92,"maxPlayers":18,"platforms":["PC","Steam","Raspberry Pi"],"price":"Free"},
+                {"name":"Emoji Charades","originalComment":"Charades type game where you give clues by typing emojis on a phone. \"Unlimited\" number of players. 1 phone as a controller, the rest participate by guessing the secret word/phrase. Shared screen.","reviewScore":75,"maxPlayers":100,"platforms":["PC","Steam","iOS","Android"],"price":"Not specified"},
+                {"name":"Acron: Attack of the Squirrels!","originalComment":"1 VR player plays as a tree whose mission is to protect the golden acorns from theiving squirrels. The squirrels are played by 2-8 mobile device players. Seperate screens.","reviewScore":70,"maxPlayers":9,"platforms":["PC","Steam","VR","Oculus","iOS","Android"],"price":"Not specified"},
+                {"name":"The Jackbox Party Pack 6","originalComment":"5 party games, phones as controllers: Trivia Murder Party 2 (1-8 players), Dictionarium (3-8 pl., Push The Button (4-10 pl.), Joke Boat (3-8 pl.), Role Models (1-6 pl.)","reviewScore":74,"maxPlayers":10,"platforms":["PC","Steam","PS4","Xbox","Nintendo Switch"],"price":"$29.99"},
+                {"name":"Fish Volleyball","originalComment":"2D Volleyball with fish. Up to 10 local players. Shared screen.","reviewScore":70,"maxPlayers":10,"platforms":["PC","Steam"],"price":"Not specified"},
+                {"name":"Sea Of Fatness: Save Humanity Together","originalComment":"Physics driven 2d (puzzle?) game. Can be played co-op with XInput gamepads and up to 10 mice. Same screen.","reviewScore":72,"maxPlayers":10,"platforms":["PC","Steam","Mac","Linux"],"price":"$2.99"},
+                {"name":"Photon Rush","originalComment":"Tron/Light cycle inspired game with power ups. 16 local players. Up to 8 controllers with support for 2 players per controller. 4 players on keyboard. Splitscreen.","reviewScore":70,"maxPlayers":16,"platforms":["PC","Steam","Mac","Linux"],"price":"$15.99"},
+                {"name":"Table Football Pro","originalComment":"Table football simulation supporting up to 22 local players. The gameplay is like the classic \"LEGO soccer table\". Same screen","reviewScore":50,"maxPlayers":22,"platforms":["PC","Steam"],"price":"$1.99"},
+                {"name":"The Crowded Party Game Collection","originalComment":"Party game with mini games for up to 10 players. Phones as controllers. Same screen.","reviewScore":59,"maxPlayers":10,"platforms":["PC","Steam"],"price":"Not specified"},
+                {"name":"Obliteracers","originalComment":"Micromachines style racing game up to 16 local players, same screen","reviewScore":67,"maxPlayers":16,"platforms":["PC","Steam","PS4","Xbox One"],"price":"Not specified"},
+                {"name":"The Jackbox Party Pack","originalComment":"5 party games, phones or tablets as controllers: YOU DON'T KNOW JACK 2015 (1-4 players), Fibbage XL (2-8 players), Drawful (3-8 players), Word Spud (2-8 players), Lie Swatter (1-100 players)","reviewScore":85,"maxPlayers":100,"platforms":["PC","Steam","PS4","PS3","Xbox One","Xbox 360","Nintendo Switch","iOS","Android","Amazon Fire TV"],"price":"Not specified"},
+                {"name":"MageQuit","originalComment":"a wizard-brawling arena game where up to 10 players (same screen) use spells and physics to do battle.","reviewScore":80,"maxPlayers":10,"platforms":["PC","Steam","Xbox One"],"price":"$5.99"},
+                {"name":"Crate Punks","originalComment":"2D side view crate throwing brawler. 2-8 local players. Modify options file for even more players. Gamepads + 2 keyboard players supported. Gamepads only work on Win10 English version. Shared screen.","reviewScore":70,"maxPlayers":8,"platforms":["PC","Steam"],"price":"$3.00"},
+                {"name":"Overlook: Local multiplayer game - up to 16 players","originalComment":"Split in 2 teams: one team is for infected robots, the other team has to find them. Up to 16 players using 8 gamepads, same screen","reviewScore":30,"maxPlayers":16,"platforms":["PC","Steam","Mac","Linux"],"price":"$14.99"},
+                {"name":"Regular Human Basketball","originalComment":"2 teams cooperate to control their team's gigantic robot basketball player with rocket jets a magnetic arm and wheels. At least 10 local players confirmed. Online play supported. Same screen.","reviewScore":93,"maxPlayers":10,"platforms":["PC","Steam","Mac","Linux"],"price":"$2.49"},
+                {"name":"Autogame Deluxe","originalComment":"One button party game. Drive a car and try not to crash into other cars. When you press your button the car turns 90 degrees and accelerates. 1-10 local players. Shared screen.","reviewScore":100,"maxPlayers":10,"platforms":["PC","Steam"],"price":"$4.49"},
+                {"name":"Super Sketchy Party","originalComment":"Drawing and guessing game. Multiple languages. 3-12 local or online players. Phones as controllers. Separate screens.","reviewScore":75,"maxPlayers":12,"platforms":["PC","Steam","Mac","Linux"],"price":"Not specified"},
+                {"name":"The Jackbox Party Pack 9","originalComment":"5 party games, phones as controllers: Fibbage 4 (2-8 players). Quixort (1-10 players). Junktopia (3-8 players). Nonsensory (3-8 players). Roomerang (4-9 players)","reviewScore":75,"maxPlayers":10,"platforms":["PC","Steam","PS4","PS5","Xbox One","Xbox Series X/S","Nintendo Switch"],"price":"$17.99"},
+                {"name":"The Jackbox Party Pack 10","originalComment":"5 party games, phones as controllers: Tee K.O. 2, FixyText, Hypnotorious, Timejinx, and Dodo Re Mi. Games support up to 9 players and 10,000 audience members.","reviewScore":75,"maxPlayers":9,"platforms":["PC","Steam","PS4","PS5","Xbox One","Xbox Series X/S","Nintendo Switch"],"price":"Not specified"},
+                {"name":"Heads Up! Phones Down Edition","originalComment":"Party game where a player tries to guess a word or phrase with the help of clues from friends. No hard limit to number of participants. Shared screen.","reviewScore":45,"maxPlayers":100,"platforms":["PC","Steam","PS4","PS5","Xbox One","Xbox Series X/S","Nintendo Switch"],"price":"$39.99"},
+                {"name":"Melody Mania","originalComment":"Singing game similar to Sing Star. No hard limit to number of mics but UI will get crowded. Android phones can also be used as microphones.Shared screen.","reviewScore":78,"maxPlayers":100,"platforms":["PC","Steam","Mac","Linux","Steam Deck"],"price":"$18.99"},
+                {"name":"Party Quiz","originalComment":"Quiz game for 8 local players + a game show host. The game includes quiz packs but you can get more via Steam Workshop or create your own. Phones as controllers. Shared screen + phones.","reviewScore":86,"maxPlayers":8,"platforms":["PC","Steam"],"price":"$2.79"},
+                {"name":"Secret Shuffle","originalComment":"Social deduction dance game for 4 to 60 players. 10 game modes. Everyone uses phones and headphones. Shared screen highlights what's happening in the game.","reviewScore":100,"maxPlayers":60,"platforms":["PC","Steam","iOS","Android"],"price":"$6.49"},
+                {"name":"Citywars Tower Defense","originalComment":"Survival tower defense. Can be played in co-op in split screen where each screen is a full instance of the game connected via network multiplayer. No hard limit to number of local players","reviewScore":80,"maxPlayers":100,"platforms":["PC","Steam"],"price":"Free"},
+                {"name":"Bingo Hall","originalComment":"Bingo for up to 50 players, either with printed cards or phones as controllers. Shared screen + phone screens.","reviewScore":78,"maxPlayers":50,"platforms":["PC","Steam"],"price":"Not specified"},
+                {"name":"Event Race","originalComment":"Top down racing for up to 30 local players. Max number of gamepads currently unknown. Phones as controllers. Shared screen.","reviewScore":95,"maxPlayers":30,"platforms":["PC","Steam"],"price":"Free"}
+            ];
+
+            document.getElementById('lastUpdate').textContent = new Date().getFullYear();
+        }
+
+        function filterGames() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const minPlayers = parseInt(document.getElementById('minPlayers').value) || 0;
+            const minScore = parseInt(document.getElementById('minScore').value) || 0;
+
+            const selectedPlatforms = Array.from(document.querySelectorAll('.platform-checkbox:checked'))
+                .map(cb => cb.value);
+
+            filteredGames = allGames.filter(game => {
+                const nameMatch = game.name.toLowerCase().includes(searchTerm);
+                const playersMatch = game.maxPlayers >= minPlayers;
+                const scoreMatch = game.reviewScore >= minScore;
+
+                let platformMatch = true;
+                if (selectedPlatforms.length > 0) {
+                    platformMatch = selectedPlatforms.some(platform =>
+                        game.platforms.includes(platform)
+                    );
+                }
+
+                return nameMatch && playersMatch && scoreMatch && platformMatch;
+            });
+
+            sortGames(currentSort);
+            displayGames();
+        }
+
+        function sortGames(sortType) {
+            currentSort = sortType;
+
+            if (sortType === 'name') {
+                filteredGames.sort((a, b) => a.name.localeCompare(b.name));
+            } else if (sortType === 'score') {
+                filteredGames.sort((a, b) => b.reviewScore - a.reviewScore);
+            } else if (sortType === 'players') {
+                filteredGames.sort((a, b) => b.maxPlayers - a.maxPlayers);
+            }
+
+            // Update button states
+            document.querySelectorAll('.sort-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            displayGames();
+        }
+
+        function sortBy(type) {
+            sortGames(type);
+        }
+
+        function displayGames() {
+            const container = document.getElementById('gamesContainer');
+            const resultCount = document.getElementById('resultCount');
+
+            resultCount.textContent = filteredGames.length;
+
+            if (filteredGames.length === 0) {
+                container.innerHTML = `
+                    <div style="grid-column: 1 / -1;">
+                        <div class="no-results">
+                            <div class="no-results-icon">🎮</div>
+                            <div class="no-results-title">No games found</div>
+                            <div class="no-results-text">Try adjusting your filters to find more games</div>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = filteredGames.map(game => `
+                <div class="game-card">
+                    <div class="game-title">${game.name}</div>
+
+                    <div class="game-meta">
+                        <div class="score-badge ${getScoreBadgeClass(game.reviewScore)}">
+                            ⭐ ${game.reviewScore}/100
+                        </div>
+                        <div class="players-badge">👥 ${game.maxPlayers}+ Players</div>
+                    </div>
+
+                    <div class="game-comment">"${game.originalComment}"</div>
+
+                    <div class="platforms">
+                        ${game.platforms.map(p => `<span class="platform-tag">${p}</span>`).join('')}
+                    </div>
+
+                    <div class="meta-item">
+                        <strong>Price:</strong> ${game.price}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function getScoreBadgeClass(score) {
+            if (score >= 80) return 'high';
+            if (score >= 60) return 'medium';
+            return 'low';
+        }
+
+        function resetFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('minPlayers').value = '8';
+            document.getElementById('minScore').value = '0';
+            document.querySelectorAll('.platform-checkbox').forEach(cb => cb.checked = false);
+            currentSort = 'name';
+            filterGames();
+        }
+
+        // Allow Enter key to search
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('searchInput').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') filterGames();
+            });
+        });
+    </script>
+</body>
+</html>

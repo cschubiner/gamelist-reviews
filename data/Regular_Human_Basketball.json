@@ -1,0 +1,8 @@
+{
+  "name": "Regular Human Basketball",
+  "originalComment": "2 teams cooperate to control their team's gigantic robot basketball player with rocket jets a magnetic arm and wheels. At least 10 local players confirmed. Online play supported. Same screen.",
+  "reviewScore": 93,
+  "maxPlayers": 10,
+  "platforms": ["PC", "Steam", "Mac", "Linux"],
+  "price": "$2.49"
+}

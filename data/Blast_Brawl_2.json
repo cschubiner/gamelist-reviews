@@ -1,0 +1,8 @@
+{
+  "name": "Blast Brawl 2",
+  "originalComment": "2D platform fighting. 9 local players. 🎮 9 wired PS4. SteamInput off. (9 wireless via virtual PS4 using reWASD.) 🎮 4 XBox. (9 via reWASD. Activate virtual PS4 before game start.) 🖥️ Shared screen.",
+  "reviewScore": 73,
+  "maxPlayers": 9,
+  "platforms": ["PC", "Steam"],
+  "price": "$0.99"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Sea Of Fatness: Save Humanity Together",
+  "originalComment": "Physics driven 2d (puzzle?) game. Can be played co-op with XInput gamepads and up to 10 mice. Same screen.",
+  "reviewScore": 72,
+  "maxPlayers": 10,
+  "platforms": ["PC", "Steam", "Mac", "Linux"],
+  "price": "$2.99"
+}

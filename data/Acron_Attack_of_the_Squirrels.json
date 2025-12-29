@@ -1,0 +1,8 @@
+{
+  "name": "Acron: Attack of the Squirrels!",
+  "originalComment": "1 VR player plays as a tree whose mission is to protect the golden acorns from theiving squirrels. The squirrels are played by 2-8 mobile device players. Seperate screens.",
+  "reviewScore": 70,
+  "maxPlayers": 9,
+  "platforms": ["PC", "Steam", "VR", "Oculus", "iOS", "Android"],
+  "price": "Not specified"
+}

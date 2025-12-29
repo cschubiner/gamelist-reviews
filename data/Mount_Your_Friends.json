@@ -1,0 +1,8 @@
+{
+  "name": "Mount Your Friends",
+  "originalComment": "Hot Seat weird multiplayer sporting event, up to 16 players offline, same screen (turn based)",
+  "reviewScore": 90,
+  "maxPlayers": 16,
+  "platforms": ["PC", "Steam"],
+  "price": "$4.99"
+}
