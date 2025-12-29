@@ -14,7 +14,7 @@ This repository contains detailed review summaries for games that support large 
 
 ## Interactive Visualizer
 
-Browse and filter all games with the **[Interactive Game Browser](https://cschubiner.github.io/gamelist_manyplayers/)** hosted on GitHub Pages!
+Browse and filter all games with the **[Interactive Game Browser](https://cschubiner.github.io/gamelist-reviews/)** hosted on GitHub Pages!
 
 **Features:**
 - Search games by name
@@ -34,7 +34,7 @@ Complete review data for 202 games in `/reviews/` directory, including:
 - Sea of Fatness, Photon Rush, Overlay, Stick Fight, and more
 - Plus 188 additional games covering diverse multiplayer genres
 
-See the **[Interactive Visualizer](https://cschubiner.github.io/gamelist_manyplayers/)** for the complete, sortable list of all 204 games.
+See the **[Interactive Visualizer](https://cschubiner.github.io/gamelist-reviews/)** for the complete, sortable list of all 204 games.
 
 ## Review Methodology
 
