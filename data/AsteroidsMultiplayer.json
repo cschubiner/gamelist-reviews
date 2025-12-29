@@ -1,0 +1,11 @@
+{
+  "name": "AsteroidsMultiplayer",
+  "originalComment": "",
+  "reviewScore": 0,
+  "maxPlayers": 8,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": "$2.99"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Verse Surf",
+  "originalComment": "Everyone listens to a verse, makes up a lyric for the missing word and hope someone votes for their lyric. 8 players. Phones/tablets/browsers as controllers.",
+  "reviewScore": 0,
+  "maxPlayers": 8,
+  "platforms": [
+    "Linux",
+    "Mac",
+    "PC",
+    "Steam",
+    "Windows"
+  ],
+  "price": ""
+}

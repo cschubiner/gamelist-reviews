@@ -1,8 +1,13 @@
 {
   "name": "Splody",
   "originalComment": "Bomberman inspired game supporting \"as many local players as you can connect controllers\". Same screen.",
-  "reviewScore": 40,
-  "maxPlayers": 20,
-  "platforms": ["PC", "Steam", "PS4"],
+  "reviewScore": 0,
+  "maxPlayers": 64,
+  "platforms": [
+    "PC",
+    "PS4",
+    "PlayStation",
+    "Steam"
+  ],
   "price": "$5.49"
 }

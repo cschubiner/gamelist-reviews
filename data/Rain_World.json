@@ -1,0 +1,11 @@
+{
+  "name": "Rain World",
+  "originalComment": "2D platform environmental survival game. 4 local players in Arena mode. Downpour DLC adds 4-player Jolly-co-op and Expeditions modes. 16 players with mod: “Myriad of Slugcats”. 🖥️ Shared screen.",
+  "reviewScore": 70,
+  "maxPlayers": 4,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": "$8.74"
+}

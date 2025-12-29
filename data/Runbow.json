@@ -1,8 +1,10 @@
 {
   "name": "Runbow",
   "originalComment": "Platform racing. 9 players. 🎮 9 PS4 with SteamInput off. 🎮 9 XBox if 4 are connected before game start. (9 via reWASD. Activate virtual PS4 before game start.) ⌨ 9 on keyboard. 🖥️ Shared screen.",
-  "reviewScore": 82,
+  "reviewScore": 86,
   "maxPlayers": 9,
-  "platforms": ["PC", "Steam", "Nintendo Switch", "Wii U", "Xbox", "PS4"],
-  "price": "Not specified"
+  "platforms": [
+    "Nintendo Switch"
+  ],
+  "price": ""
 }

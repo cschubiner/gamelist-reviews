@@ -1,0 +1,11 @@
+{
+  "name": "Destroiders",
+  "originalComment": "2.5D rock blaster space shooter. Co-op or versus, up to 4 teams, no hard limit for number of local players. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 2,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": "$3.99"
+}

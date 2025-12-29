@@ -1,8 +1,12 @@
 {
   "name": "Emoji Charades",
-  "originalComment": "Charades type game where you give clues by typing emojis on a phone. \"Unlimited\" number of players. 1 phone as a controller, the rest participate by guessing the secret word/phrase. Shared screen.",
-  "reviewScore": 75,
-  "maxPlayers": 100,
-  "platforms": ["PC", "Steam", "iOS", "Android"],
-  "price": "Not specified"
+  "originalComment": "Charades type game where you give clues by typing emojis on a phone. “Unlimited” number of players. 1 phone as a controller, the rest participate by guessing the secret word/phrase. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 2,
+  "platforms": [
+    "Android",
+    "Steam",
+    "iOS"
+  ],
+  "price": ""
 }

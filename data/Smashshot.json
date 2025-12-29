@@ -1,0 +1,11 @@
+{
+  "name": "Smashshot",
+  "originalComment": "Top-down twinstick shooter. 2-9 local players in PvP. 1-6 in PvE.",
+  "reviewScore": 0,
+  "maxPlayers": 0,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": ""
+}

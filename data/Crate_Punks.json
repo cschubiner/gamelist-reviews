@@ -1,8 +1,11 @@
 {
   "name": "Crate Punks",
   "originalComment": "2D side view crate throwing brawler. 2-8 local players. Modify options file for even more players. Gamepads + 2 keyboard players supported. Gamepads only work on Win10 English version. Shared screen.",
-  "reviewScore": 70,
-  "maxPlayers": 8,
-  "platforms": ["PC", "Steam"],
+  "reviewScore": 0,
+  "maxPlayers": 16,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
   "price": "$3.00"
 }

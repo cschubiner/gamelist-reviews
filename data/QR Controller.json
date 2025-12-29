@@ -1,0 +1,13 @@
+{
+  "name": "QR Controller",
+  "originalComment": "Utility for using phones as virtual gamepads. Works with at least 16 phones. Works on the same wi-fi or over the internet with some added latency. 📱 Phones as controllers using browsers.",
+  "reviewScore": 0,
+  "maxPlayers": 0,
+  "platforms": [
+    "Android",
+    "PC",
+    "Steam",
+    "iOS"
+  ],
+  "price": "$6.39"
+}

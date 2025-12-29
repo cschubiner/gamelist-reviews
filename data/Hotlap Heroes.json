@@ -1,0 +1,13 @@
+{
+  "name": "Hotlap Heroes",
+  "originalComment": "Top-down racing game for up to 8 local players. 2 keyboard players, up to 8 gamepads (XInput limit unverified), up to 8 phones as controllers. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 8,
+  "platforms": [
+    "Android",
+    "PC",
+    "Steam",
+    "iOS"
+  ],
+  "price": ""
+}

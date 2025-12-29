@@ -1,0 +1,11 @@
+{
+  "name": "ANYKEY",
+  "originalComment": "One button game supporting up to 60 players. Check simultaneous key press limit of your keyboard or plug in extra keyboards. Same screen.",
+  "reviewScore": 0,
+  "maxPlayers": 60,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": ""
+}

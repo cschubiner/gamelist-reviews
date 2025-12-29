@@ -1,0 +1,11 @@
+{
+  "name": "Horror Movie Bingo",
+  "originalComment": "Watch a horror movie of your choice. Start the game, each player gets a bingo card on their smartphone. Instead of numbers you have to notice something in the movie. 1-12 local players on smartphones.",
+  "reviewScore": 0,
+  "maxPlayers": 0,
+  "platforms": [
+    "Steam",
+    "Windows"
+  ],
+  "price": "$5.00"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Tabletop Simulator",
+  "originalComment": "Turn-based board games. 1 controller or keyboard & mouse. 10 local players. 🖥️ Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 10,
+  "platforms": [
+    "Linux",
+    "Mac",
+    "PC",
+    "Steam",
+    "VR"
+  ],
+  "price": "$9.99"
+}

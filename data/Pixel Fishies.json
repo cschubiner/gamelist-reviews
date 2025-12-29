@@ -1,0 +1,11 @@
+{
+  "name": "Pixel Fishies",
+  "originalComment": "Lead a school of fish to eat food, grow, and destroy. Up to 16 local players in 4 teams. Set Steam Input to \"Forced off\" for the game if you want to use more than 4 XInput controllers. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 16,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": ""
+}

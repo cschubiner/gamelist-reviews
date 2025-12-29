@@ -1,0 +1,16 @@
+{
+  "name": "Use Your Words",
+  "originalComment": "Word based party game with 4 mini games. 3-6 players using phones, tablets, etc. Up to 1000 spectators can participate by voting for their favorite answers.",
+  "reviewScore": 0,
+  "maxPlayers": 6,
+  "platforms": [
+    "Android",
+    "Nintendo Switch",
+    "PC",
+    "PlayStation",
+    "Steam",
+    "Xbox",
+    "iOS"
+  ],
+  "price": "$14.99"
+}

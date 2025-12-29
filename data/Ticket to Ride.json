@@ -1,0 +1,16 @@
+{
+  "name": "Ticket to Ride",
+  "originalComment": "",
+  "reviewScore": 0,
+  "maxPlayers": 5,
+  "platforms": [
+    "Android",
+    "Nintendo Switch",
+    "PC",
+    "PlayStation",
+    "Steam",
+    "Xbox",
+    "iOS"
+  ],
+  "price": "$9.99"
+}

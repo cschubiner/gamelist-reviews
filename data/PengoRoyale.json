@@ -1,0 +1,11 @@
+{
+  "name": "PengoRoyale",
+  "originalComment": "Penguin battle royale. 2-12 local players. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 12,
+  "platforms": [
+    "Steam",
+    "Windows"
+  ],
+  "price": ""
+}

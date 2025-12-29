@@ -1,0 +1,15 @@
+{
+  "name": "Fibbage XL",
+  "originalComment": "Bluffing party game with phones or tablets as controllers for 2-8 players.",
+  "reviewScore": 0,
+  "maxPlayers": 8,
+  "platforms": [
+    "Mac",
+    "Nintendo Switch",
+    "PC",
+    "PlayStation",
+    "Steam",
+    "Xbox"
+  ],
+  "price": "$6.99"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "The Jackbox Party Pack 3",
+  "originalComment": "Tabletop party game for the digital age, up to 8 players, using smartphones",
+  "reviewScore": 97,
+  "maxPlayers": 8,
+  "platforms": [
+    "Nintendo Switch",
+    "PC",
+    "PlayStation",
+    "Steam",
+    "Xbox"
+  ],
+  "price": "$24.99"
+}

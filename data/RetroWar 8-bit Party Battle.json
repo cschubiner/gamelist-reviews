@@ -1,0 +1,11 @@
+{
+  "name": "RetroWar 8-bit Party Battle",
+  "originalComment": "Retro arcade games designed for 4 players but support up to 16 local players. Shared Screen.",
+  "reviewScore": 0,
+  "maxPlayers": 16,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": ""
+}

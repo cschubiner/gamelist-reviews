@@ -1,8 +1,11 @@
 {
   "name": "Bingo Hall",
   "originalComment": "Bingo for up to 50 players, either with printed cards or phones as controllers. Shared screen + phone screens.",
-  "reviewScore": 78,
+  "reviewScore": 0,
   "maxPlayers": 50,
-  "platforms": ["PC", "Steam"],
-  "price": "Not specified"
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": ""
 }

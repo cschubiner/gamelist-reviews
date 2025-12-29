@@ -1,0 +1,13 @@
+{
+  "name": "Askutron Quiz Show",
+  "originalComment": "Trivia game. Ability to create own questions. Up to 8 players. 8 Gamepads supported and mobile controllers as well. Same screen.",
+  "reviewScore": 0,
+  "maxPlayers": 8,
+  "platforms": [
+    "Android",
+    "PC",
+    "Steam",
+    "iOS"
+  ],
+  "price": ""
+}

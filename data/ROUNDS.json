@@ -1,0 +1,11 @@
+{
+  "name": "ROUNDS",
+  "originalComment": "2D platform shooter. Normally a 1v1 game, but up to 16 local or online players via this mod: https://github.com/olavim/RoundsWithFriends Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 0,
+  "platforms": [
+    "Steam",
+    "Windows"
+  ],
+  "price": ""
+}

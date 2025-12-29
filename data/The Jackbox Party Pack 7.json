@@ -1,0 +1,17 @@
+{
+  "name": "The Jackbox Party Pack 7",
+  "originalComment": "5 party games, phones as controllers: Quiplash (3-8 players), The Devils and the Details (3-8 pl.), Champ’d Up (3-8 pl.), Talking Points (3-8 pl.), Blather 'Round (2-6 pl.)",
+  "reviewScore": 87,
+  "maxPlayers": 8,
+  "platforms": [
+    "Linux",
+    "Mac",
+    "Nintendo Switch",
+    "PC",
+    "PlayStation",
+    "Steam",
+    "Windows",
+    "Xbox"
+  ],
+  "price": "$29.99"
+}

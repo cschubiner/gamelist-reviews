@@ -1,8 +1,14 @@
 {
   "name": "JoustMania",
   "originalComment": "Physical party game for open spaces. Requires PlayStation Move controllers. Several game modes. Supports 7 PS Move controllers on Windows or 18+ PS Move controllers on Raspberry Pi. (No screen.)",
-  "reviewScore": 92,
-  "maxPlayers": 18,
-  "platforms": ["PC", "Steam", "Raspberry Pi"],
-  "price": "Free"
+  "reviewScore": 7,
+  "maxPlayers": 7,
+  "platforms": [
+    "Mac",
+    "PC",
+    "PlayStation",
+    "Steam",
+    "Windows"
+  ],
+  "price": ""
 }

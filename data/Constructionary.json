@@ -1,0 +1,12 @@
+{
+  "name": "Constructionary",
+  "originalComment": "Similar to pictionary. 1 VR player is given a word and tries to create a model representing that word. An audience of any number can watch the screen and guess the word. 1 VR headset + 1 screen.",
+  "reviewScore": 0,
+  "maxPlayers": 6,
+  "platforms": [
+    "PC",
+    "Steam",
+    "VR"
+  ],
+  "price": "$3.99"
+}

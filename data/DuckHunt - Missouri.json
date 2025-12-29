@@ -1,0 +1,15 @@
+{
+  "name": "DuckHunt - Missouri",
+  "originalComment": "Like the classic Duck Hunt on NES except instead of the gun, you aim by pointing your phone’s camera at the screen. Any number of local players divided into 2 teams. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 2,
+  "platforms": [
+    "Android",
+    "Mac",
+    "PC",
+    "Steam",
+    "Windows",
+    "iOS"
+  ],
+  "price": "$1.99"
+}

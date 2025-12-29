@@ -1,0 +1,12 @@
+{
+  "name": "Quiz Quest",
+  "originalComment": "Trivia game for up to 6 players. Phones as controllers. 📱 6 phones using browsers. 🖥️ Phones + Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 0,
+  "platforms": [
+    "Meta Quest",
+    "PC",
+    "VR"
+  ],
+  "price": "$2.99"
+}

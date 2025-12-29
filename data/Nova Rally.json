@@ -1,0 +1,11 @@
+{
+  "name": "Nova Rally",
+  "originalComment": "Affect a car race by sending commands to your driver like boost, ram, shield or special. 24 local players using phones. 🖥️ Shared screen + phones.",
+  "reviewScore": 0,
+  "maxPlayers": 24,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": ""
+}

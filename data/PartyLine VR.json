@@ -1,0 +1,12 @@
+{
+  "name": "PartyLine VR",
+  "originalComment": "Minigames where 1 VR player plays with/against up to 8 players using phones/tablets as controllers. VR + shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 8,
+  "platforms": [
+    "PC",
+    "Steam",
+    "VR"
+  ],
+  "price": ""
+}

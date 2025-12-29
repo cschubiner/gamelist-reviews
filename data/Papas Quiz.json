@@ -1,0 +1,15 @@
+{
+  "name": "Papas Quiz",
+  "originalComment": "Quiz party game for up to 8 local players. Phones as controllers. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 8,
+  "platforms": [
+    "Nintendo Switch",
+    "PC",
+    "PS4",
+    "PlayStation",
+    "Steam",
+    "Xbox"
+  ],
+  "price": "$3.24"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Ropeat",
+  "originalComment": "Top down shooter with clone repeater mechanic. 2-10 local players. 🖥️ Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 10,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": ""
+}

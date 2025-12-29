@@ -1,0 +1,11 @@
+{
+  "name": "SnackHunter",
+  "originalComment": "Hide and seek game played on phones using an app. The hunter’s location is displayed on the PC screen for everyone to see. Up to 16 players. Shared screen + phone screens.",
+  "reviewScore": 0,
+  "maxPlayers": 16,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": ""
+}

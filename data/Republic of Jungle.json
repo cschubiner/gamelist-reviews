@@ -1,0 +1,13 @@
+{
+  "name": "Republic of Jungle",
+  "originalComment": "Social deduction game for 5-10 players. Phones (browsers) as controllers. Separate screens.",
+  "reviewScore": 0,
+  "maxPlayers": 10,
+  "platforms": [
+    "Linux",
+    "Mac",
+    "Steam",
+    "Windows"
+  ],
+  "price": ""
+}

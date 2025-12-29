@@ -1,8 +1,11 @@
 {
   "name": "Super Slime Arena",
-  "originalComment": "Party fighting game. 2-50+ Players (local and online, 2-8 players recommended). \"Any number\" of controllers supported. Same screen.",
-  "reviewScore": 70,
+  "originalComment": "Party fighting game. 2-50+ Players (local and online, 2-8 players recommended). “Any number” of controllers supported. Same screen.",
+  "reviewScore": 0,
   "maxPlayers": 50,
-  "platforms": ["PC", "Steam"],
+  "platforms": [
+    "Nintendo Switch",
+    "Steam"
+  ],
   "price": "$14.99"
 }

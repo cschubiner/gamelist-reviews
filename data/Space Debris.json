@@ -1,0 +1,12 @@
+{
+  "name": "Space Debris",
+  "originalComment": "Asteroids type game. Co-op or versus.12 ships with different abilities. 1-16 local players. 4 Xinput + 8 Dinput + 4 Keyboard. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 16,
+  "platforms": [
+    "PC",
+    "Steam",
+    "Windows"
+  ],
+  "price": "$1.99"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Trenchfoot",
+  "originalComment": "Bomberman type game for up to 16 local players. (At the time of writing it doesn’t support single player.) Single screen.",
+  "reviewScore": 0,
+  "maxPlayers": 16,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": ""
+}

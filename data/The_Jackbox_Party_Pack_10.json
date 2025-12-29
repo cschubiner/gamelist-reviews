@@ -3,6 +3,11 @@
   "originalComment": "5 party games, phones as controllers: Tee K.O. 2, FixyText, Hypnotorious, Timejinx, and Dodo Re Mi. Games support up to 9 players and 10,000 audience members.",
   "reviewScore": 75,
   "maxPlayers": 9,
-  "platforms": ["PC", "Steam", "PS4", "PS5", "Xbox One", "Xbox Series X/S", "Nintendo Switch"],
-  "price": "Not specified"
+  "platforms": [
+    "Nintendo Switch",
+    "PC",
+    "PlayStation",
+    "Xbox"
+  ],
+  "price": ""
 }

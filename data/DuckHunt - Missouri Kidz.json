@@ -1,0 +1,15 @@
+{
+  "name": "DuckHunt - Missouri Kidz",
+  "originalComment": "Carnival shooting game where you aim by pointing your phone’s camera at the screen. Any number of local players divided into 2 teams. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 0,
+  "platforms": [
+    "Android",
+    "Mac",
+    "PC",
+    "Steam",
+    "Windows",
+    "iOS"
+  ],
+  "price": "$1.99"
+}

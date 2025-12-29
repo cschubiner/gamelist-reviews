@@ -1,0 +1,16 @@
+{
+  "name": "Potato Party Hash It Out",
+  "originalComment": "Pictionary. VR player draws using 3D shapes, air-painting, or canvas drawing. 1-8 other players guess the word using an android/iOS app. Shared screen for seeing the drawing.",
+  "reviewScore": 0,
+  "maxPlayers": 0,
+  "platforms": [
+    "Android",
+    "HTC Vive",
+    "Meta Quest",
+    "Oculus",
+    "Steam",
+    "VR",
+    "iOS"
+  ],
+  "price": "$9.99"
+}

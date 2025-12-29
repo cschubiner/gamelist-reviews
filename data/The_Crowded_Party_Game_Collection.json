@@ -1,8 +1,11 @@
 {
   "name": "The Crowded Party Game Collection",
   "originalComment": "Party game with mini games for up to 10 players. Phones as controllers. Same screen.",
-  "reviewScore": 59,
+  "reviewScore": 0,
   "maxPlayers": 10,
-  "platforms": ["PC", "Steam"],
-  "price": "Not specified"
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": ""
 }

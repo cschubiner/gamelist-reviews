@@ -1,0 +1,12 @@
+{
+  "name": "PICOPARK",
+  "originalComment": "",
+  "reviewScore": 90,
+  "maxPlayers": 8,
+  "platforms": [
+    "Nintendo Switch",
+    "Steam",
+    "Windows"
+  ],
+  "price": "$4.99"
+}

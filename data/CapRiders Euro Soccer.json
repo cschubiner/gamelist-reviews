@@ -1,0 +1,13 @@
+{
+  "name": "CapRiders Euro Soccer",
+  "originalComment": "Local multiplayer soccer game with unusual ball control mechanic. Gamepads or Android/iOS phones as controllers. Up to 8 players, same screen.",
+  "reviewScore": 0,
+  "maxPlayers": 22,
+  "platforms": [
+    "Android",
+    "PC",
+    "Steam",
+    "iOS"
+  ],
+  "price": ""
+}

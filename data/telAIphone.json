@@ -1,0 +1,10 @@
+{
+  "name": "telAIphone",
+  "originalComment": "Whisper game. Describe an image to an AI who draws a new image which is passed to the next player. 4-8 players. 📱 8 phones using browsers. 🖥️ Phones + shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 8,
+  "platforms": [
+    "Steam"
+  ],
+  "price": ""
+}

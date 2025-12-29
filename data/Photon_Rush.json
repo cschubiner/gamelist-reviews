@@ -1,8 +1,13 @@
 {
   "name": "Photon Rush",
   "originalComment": "Tron/Light cycle inspired game with power ups. 16 local players. Up to 8 controllers with support for 2 players per controller. 4 players on keyboard. Splitscreen.",
-  "reviewScore": 70,
+  "reviewScore": 0,
   "maxPlayers": 16,
-  "platforms": ["PC", "Steam", "Mac", "Linux"],
+  "platforms": [
+    "Linux",
+    "Mac",
+    "Steam",
+    "Windows"
+  ],
   "price": "$15.99"
 }

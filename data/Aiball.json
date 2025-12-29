@@ -1,0 +1,11 @@
+{
+  "name": "Aiball",
+  "originalComment": "Physics based game with soccer, king of the hill and sandbox mode. The ball doesn’t spawn in soccer mode and king of the hill seems broken. 2-10 local players. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 10,
+  "platforms": [
+    "Steam",
+    "Windows"
+  ],
+  "price": "$0.49"
+}

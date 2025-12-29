@@ -1,8 +1,11 @@
 {
   "name": "Autogame Deluxe",
   "originalComment": "One button party game. Drive a car and try not to crash into other cars. When you press your button the car turns 90 degrees and accelerates. 1-10 local players. Shared screen.",
-  "reviewScore": 100,
+  "reviewScore": 0,
   "maxPlayers": 10,
-  "platforms": ["PC", "Steam"],
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
   "price": "$4.49"
 }

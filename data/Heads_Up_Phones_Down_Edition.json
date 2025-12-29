@@ -1,8 +1,13 @@
 {
-  "name": "Heads Up! Phones Down Edition",
-  "originalComment": "Party game where a player tries to guess a word or phrase with the help of clues from friends. No hard limit to number of participants. Shared screen.",
-  "reviewScore": 45,
-  "maxPlayers": 100,
-  "platforms": ["PC", "Steam", "PS4", "PS5", "Xbox One", "Xbox Series X/S", "Nintendo Switch"],
-  "price": "$39.99"
+  "name": "Heads Up Phones Down Edition",
+  "originalComment": "",
+  "reviewScore": 0,
+  "maxPlayers": 0,
+  "platforms": [
+    "Nintendo Switch",
+    "PC",
+    "PlayStation",
+    "Xbox"
+  ],
+  "price": "$35"
 }

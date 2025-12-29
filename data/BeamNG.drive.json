@@ -1,0 +1,12 @@
+{
+  "name": "BeamNG.drive",
+  "originalComment": "A dynamic soft-body physics vehicle simulator.\" 16 local players shared screen. Limited by performance and scenarios available. Create scenarios or use freeroam.(4 XInput, 16 DirectInput, 1 keyboard)",
+  "reviewScore": 0,
+  "maxPlayers": 4,
+  "platforms": [
+    "Nintendo Switch",
+    "PC",
+    "Steam"
+  ],
+  "price": ""
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Survivors of Borridor",
+  "originalComment": "Co-op survival for 1-8 local players. Input support: mouse, keyboard, gamepad, smartphones as controllers. Top down, single screen.",
+  "reviewScore": 0,
+  "maxPlayers": 8,
+  "platforms": [
+    "Linux",
+    "PC",
+    "Steam"
+  ],
+  "price": ""
+}

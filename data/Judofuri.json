@@ -1,0 +1,11 @@
+{
+  "name": "Judofuri",
+  "originalComment": "One button party game. 2-9 local players. Optionally multiple players per controller. 🎮 9 PS4/PS5. SteamInput on for rumble. 🎮 9 XBox. ⌨ 9 on keyboard. 🖥️ Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 9,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": "$8.99"
+}

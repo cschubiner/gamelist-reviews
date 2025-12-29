@@ -1,0 +1,11 @@
+{
+  "name": "Partition Sector",
+  "originalComment": "Bomberman-like game with 6 game modes: Classic, Deathmatch, CTF, Battle Royale (individual or team), King of the Hill, Snake Hunter. Up to 20 local players. 16 gamepads + 4 keyboard. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 20,
+  "platforms": [
+    "Steam",
+    "Windows"
+  ],
+  "price": "$3.99"
+}

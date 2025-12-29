@@ -1,0 +1,14 @@
+{
+  "name": "The Jackbox Party Pack 2",
+  "originalComment": "Five party games where you use phones, tablets or computers as controllers. Fibbage 2 (2-8 players), Earwax (3-8 players), Bidiots (3-6 players), Quiplash XL (3-8 players), Bomb Corp. (1-4 players).",
+  "reviewScore": 0,
+  "maxPlayers": 8,
+  "platforms": [
+    "Nintendo Switch",
+    "PC",
+    "PlayStation",
+    "Steam",
+    "Xbox"
+  ],
+  "price": "$24.99"
+}

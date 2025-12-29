@@ -1,0 +1,14 @@
+{
+  "name": "SpiderHeck",
+  "originalComment": "2D platform shooter. 4 local players. 8+ with mod: https://github.com/Senyksia/InfiniteFriends 🎮 8+ PS4/5. SteamInput off 🎮 4 XBox (8+ via virtual PS4 using reWASD.) ⌨ 1 on keyboard 🖥️Shared screen",
+  "reviewScore": 85,
+  "maxPlayers": 4,
+  "platforms": [
+    "Nintendo Switch",
+    "PC",
+    "PlayStation",
+    "Steam",
+    "Xbox"
+  ],
+  "price": ""
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Groupthink",
+  "originalComment": "Party game where a team comes up with an answer by submitting a letter one person at a time. 3-16 local players. Browser on phones, tablets, etc as controllers. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 16,
+  "platforms": [
+    "Steam"
+  ],
+  "price": ""
+}

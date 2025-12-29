@@ -1,0 +1,12 @@
+{
+  "name": "Drink More Glurp",
+  "originalComment": "Whacky physics based sports(ish) events. 2-20 local players in turn based multiplayer. Requires a gamepad with 2 analog sticks.",
+  "reviewScore": 0,
+  "maxPlayers": 20,
+  "platforms": [
+    "Nintendo Switch",
+    "PC",
+    "Steam"
+  ],
+  "price": "$0.79"
+}

@@ -1,8 +1,14 @@
 {
   "name": "Block Pooper 9",
   "originalComment": "Players control heads competing to collect falling points and collaborating to keep the heart from being eaten. At least 16 local players. Tested with more than 4 XInput controllers. Shared screen",
-  "reviewScore": 67,
-  "maxPlayers": 16,
-  "platforms": ["PC", "Steam"],
-  "price": "Free"
+  "reviewScore": 0,
+  "maxPlayers": 6,
+  "platforms": [
+    "Nintendo Switch",
+    "PC",
+    "PS4",
+    "Steam",
+    "Xbox"
+  ],
+  "price": ""
 }

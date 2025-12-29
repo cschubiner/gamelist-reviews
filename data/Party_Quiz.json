@@ -1,8 +1,11 @@
 {
   "name": "Party Quiz",
   "originalComment": "Quiz game for 8 local players + a game show host. The game includes quiz packs but you can get more via Steam Workshop or create your own. Phones as controllers. Shared screen + phones.",
-  "reviewScore": 86,
-  "maxPlayers": 8,
-  "platforms": ["PC", "Steam"],
+  "reviewScore": 3,
+  "maxPlayers": 3,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
   "price": "$2.79"
 }

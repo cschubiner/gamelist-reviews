@@ -3,6 +3,11 @@
   "originalComment": "Micromachines style racing game up to 16 local players, same screen",
   "reviewScore": 67,
   "maxPlayers": 16,
-  "platforms": ["PC", "Steam", "PS4", "Xbox One"],
-  "price": "Not specified"
+  "platforms": [
+    "PC",
+    "PS4",
+    "Steam",
+    "Xbox"
+  ],
+  "price": "$14.99"
 }

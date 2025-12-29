@@ -1,0 +1,17 @@
+{
+  "name": "TowerFallAscension",
+  "originalComment": "",
+  "reviewScore": 0,
+  "maxPlayers": 4,
+  "platforms": [
+    "Linux",
+    "Mac",
+    "Meta Quest",
+    "Nintendo Switch",
+    "PC",
+    "PlayStation",
+    "Steam",
+    "Xbox"
+  ],
+  "price": "$14.99"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Assimilate! (A Party Game)",
+  "originalComment": "Deduction party game. Human team vs robot team. 5-10 players. Phones/tablets/browsers as controllers. Separate screens.",
+  "reviewScore": 0,
+  "maxPlayers": 10,
+  "platforms": [
+    "PC",
+    "Steam",
+    "Windows"
+  ],
+  "price": "$9.99"
+}

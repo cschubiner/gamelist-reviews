@@ -1,8 +1,11 @@
 {
-  "name": "PICO PARK:Classic Edition",
-  "originalComment": "A cooperative local multiplayer action puzzle game for 2-10 players. Up to 10 gamepads or phones as controllers. (See Pico Park a newer version for 8 local players + online mp without phone support.)",
-  "reviewScore": 88,
+  "name": "PICO PARK Classic Edition",
+  "originalComment": "",
+  "reviewScore": 92,
   "maxPlayers": 10,
-  "platforms": ["PC", "Steam"],
-  "price": "Free"
+  "platforms": [
+    "Nintendo Switch",
+    "Steam"
+  ],
+  "price": ""
 }

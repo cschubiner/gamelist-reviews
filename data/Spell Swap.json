@@ -1,0 +1,11 @@
+{
+  "name": "Spell Swap",
+  "originalComment": "Wizard vs wizard 2D fighting game. 2-8 (or more) local players. Max 4 XBox controllers. Additional non Xinput controllers can be used and multiple players on keyboard. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 6,
+  "platforms": [
+    "Steam",
+    "Windows"
+  ],
+  "price": "$1.39"
+}

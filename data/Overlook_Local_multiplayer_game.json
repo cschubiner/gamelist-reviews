@@ -1,8 +1,13 @@
 {
-  "name": "Overlook: Local multiplayer game - up to 16 players",
-  "originalComment": "Split in 2 teams: one team is for infected robots, the other team has to find them. Up to 16 players using 8 gamepads, same screen",
-  "reviewScore": 30,
+  "name": "Overlook Local multiplayer game",
+  "originalComment": "",
+  "reviewScore": 0,
   "maxPlayers": 16,
-  "platforms": ["PC", "Steam", "Mac", "Linux"],
+  "platforms": [
+    "Linux",
+    "Mac",
+    "Steam",
+    "Windows"
+  ],
   "price": "$14.99"
 }

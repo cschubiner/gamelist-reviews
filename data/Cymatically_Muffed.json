@@ -1,8 +1,11 @@
 {
   "name": "Cymatically Muffed",
   "originalComment": "Top-down shooter for 16 local players. 16 players on gamepads and 1 player on keyboard. Split screen.",
-  "reviewScore": 70,
+  "reviewScore": 0,
   "maxPlayers": 16,
-  "platforms": ["PC", "Steam", "Xbox"],
-  "price": "Not specified"
+  "platforms": [
+    "Steam",
+    "Xbox"
+  ],
+  "price": ""
 }

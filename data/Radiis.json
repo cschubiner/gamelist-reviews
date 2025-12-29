@@ -1,0 +1,11 @@
+{
+  "name": "Radiis",
+  "originalComment": "Turn-based strategy board game. 16 local players. 🖥️ Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 16,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": "$3.74"
+}

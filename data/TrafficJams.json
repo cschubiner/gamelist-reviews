@@ -1,0 +1,15 @@
+{
+  "name": "TrafficJams",
+  "originalComment": "",
+  "reviewScore": 85,
+  "maxPlayers": 5,
+  "platforms": [
+    "Meta Quest",
+    "Oculus",
+    "PC",
+    "PlayStation",
+    "Steam",
+    "VR"
+  ],
+  "price": "$19.99"
+}

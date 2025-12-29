@@ -1,0 +1,11 @@
+{
+  "name": "Golf With Your Friends",
+  "originalComment": "Minigolf game. 12 local players in turn based/hotseat mode. 🖥️Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 12,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": "$1.49"
+}

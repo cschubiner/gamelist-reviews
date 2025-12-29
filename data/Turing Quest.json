@@ -1,0 +1,12 @@
+{
+  "name": "Turing Quest",
+  "originalComment": "Up to 6 local players make up prompts. Players and an AI create funny answers to the prompts. Players vote for the funniest prompt. Will humans beat the AI? Shared screen, phones as controllers.",
+  "reviewScore": 0,
+  "maxPlayers": 10,
+  "platforms": [
+    "Meta Quest",
+    "PC",
+    "Steam"
+  ],
+  "price": ""
+}

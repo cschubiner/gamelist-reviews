@@ -1,0 +1,11 @@
+{
+  "name": "Hardtrace",
+  "originalComment": "Tron-like game. Up to 12 local players. 🎮 12 PS4/PS5. 🎮 12 XBox. ⌨ 4 on keyboard. 🖥️ Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 8,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": ""
+}

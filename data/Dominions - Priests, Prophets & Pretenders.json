@@ -1,0 +1,16 @@
+{
+  "name": "Dominions - Priests, Prophets & Pretenders",
+  "originalComment": "Turn-based strategy game. 14 local players. 🖥️ Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 14,
+  "platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "PC",
+    "Steam",
+    "Windows",
+    "iOS"
+  ],
+  "price": "$7.49"
+}

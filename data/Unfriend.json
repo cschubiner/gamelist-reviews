@@ -1,0 +1,11 @@
+{
+  "name": "Unfriend",
+  "originalComment": "Party game with prompting and voting. 6 players.📱Phones as controllers using browsers. 🖥️ Phones + shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 6,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": ""
+}

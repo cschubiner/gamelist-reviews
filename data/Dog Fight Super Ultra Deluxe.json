@@ -1,0 +1,11 @@
+{
+  "name": "Dog Fight Super Ultra Deluxe",
+  "originalComment": "2d side view dogfighting game with up to 16 local players. Singleplayer and Online supported as well. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 16,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": "$7.99"
+}

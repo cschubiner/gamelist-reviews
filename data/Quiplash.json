@@ -1,0 +1,14 @@
+{
+  "name": "Quiplash",
+  "originalComment": "Party game with phones or tablets as controllers for 3-8 players.",
+  "reviewScore": 0,
+  "maxPlayers": 8,
+  "platforms": [
+    "Nintendo Switch",
+    "PC",
+    "PlayStation",
+    "Steam",
+    "Xbox"
+  ],
+  "price": "$10"
+}

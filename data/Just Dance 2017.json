@@ -1,0 +1,13 @@
+{
+  "name": "Just Dance 2017",
+  "originalComment": "Dance game where you use smart phones as controllers. Versus or co-op up to 6 players.",
+  "reviewScore": 0,
+  "maxPlayers": 6,
+  "platforms": [
+    "Nintendo Switch",
+    "PC",
+    "PlayStation",
+    "Xbox"
+  ],
+  "price": "$39.99"
+}

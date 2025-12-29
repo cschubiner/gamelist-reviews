@@ -1,0 +1,13 @@
+{
+  "name": "Splort",
+  "originalComment": "2D physics based platform brawler. 5 game modes. Up to 12 local players. 🎮 12 PS4/PS5. 🎮 12 XBox. ⌨ 2 on keyboard. 🖥️ Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 12,
+  "platforms": [
+    "Mac",
+    "PC",
+    "Steam",
+    "Windows"
+  ],
+  "price": ""
+}

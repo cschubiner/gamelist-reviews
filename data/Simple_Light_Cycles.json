@@ -1,0 +1,11 @@
+{
+  "name": "Simple Light Cycles",
+  "originalComment": "Tron/snake game for up to 16 local players using a mix of up to 16 gamepads and 4 keyboard players. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 16,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": ""
+}

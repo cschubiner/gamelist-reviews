@@ -1,8 +1,11 @@
 {
-  "name": "A Gummy's Life",
-  "originalComment": "Physics based brawler for up to 16 local players. 🎮 16 PS4 with SteamInput On. 🎮 16 XBox. ⌨ 1 on keyboard. 🖥️ Shared screen.",
-  "reviewScore": 50,
+  "name": "A Gummys Life",
+  "originalComment": "Physics based brawler for up to 16 local players. 🎮 16 PS4 with SteamInput On. 🎮 16 XBox. ⌨ 1 on keyboard. 🖥️ Shared screen. ",
+  "reviewScore": 60,
   "maxPlayers": 16,
-  "platforms": ["PC", "Steam", "Nintendo Switch", "PS4", "Xbox"],
+  "platforms": [
+    "Nintendo Switch",
+    "Steam"
+  ],
   "price": "$19.99"
 }

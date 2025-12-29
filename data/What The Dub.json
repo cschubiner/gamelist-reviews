@@ -1,0 +1,13 @@
+{
+  "name": "What The Dub",
+  "originalComment": "",
+  "reviewScore": 87,
+  "maxPlayers": 12,
+  "platforms": [
+    "Nintendo Switch",
+    "PlayStation",
+    "Steam",
+    "Xbox"
+  ],
+  "price": "$3.99"
+}

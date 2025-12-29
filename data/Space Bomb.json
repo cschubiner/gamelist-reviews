@@ -1,0 +1,11 @@
+{
+  "name": "Space Bomb",
+  "originalComment": "Two teams fight each other using bombs of various types. Up to 6 local players. 6 gamepads or phones as controllers. Online multiplayer supported. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 6,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": "$6.99"
+}

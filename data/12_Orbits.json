@@ -1,8 +1,11 @@
 {
-  "name": "12 orbits",
+  "name": "12 Orbits",
   "originalComment": "Many different mini-games moving around colorful dots, up to 12 players, same screens",
-  "reviewScore": 65,
+  "reviewScore": 60,
   "maxPlayers": 12,
-  "platforms": ["PC", "Steam", "Nintendo Switch"],
+  "platforms": [
+    "Nintendo Switch",
+    "Steam"
+  ],
   "price": "$0.97"
 }

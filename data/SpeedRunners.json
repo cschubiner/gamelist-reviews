@@ -1,0 +1,14 @@
+{
+  "name": "SpeedRunners",
+  "originalComment": "2D platform racing. 4 local players. 16 with mod: https://www.moddb.com/mods/speedrunners-multiplayer-plus 🎮 16 PS4/PS5. SteamInput on. 🎮 16 XBox. SteamInput on. ⌨ 1 on keyoard 🖥️ Shared screen.",
+  "reviewScore": 80,
+  "maxPlayers": 4,
+  "platforms": [
+    "Nintendo Switch",
+    "PC",
+    "PlayStation",
+    "Steam",
+    "Xbox"
+  ],
+  "price": ""
+}
