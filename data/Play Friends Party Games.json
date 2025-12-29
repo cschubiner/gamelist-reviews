@@ -1,0 +1,13 @@
+{
+  "name": "Play Friends Party Games",
+  "originalComment": "Party game with mini games. 8 local players. 📱 Phones as controllers using browser or app. 🖥️ Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 8,
+  "platforms": [
+    "Android",
+    "PC",
+    "Steam",
+    "iOS"
+  ],
+  "price": ""
+}

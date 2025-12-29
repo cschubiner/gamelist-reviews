@@ -1,0 +1,12 @@
+{
+  "name": "SpaceBoots",
+  "originalComment": "2D zero gravity shooter. No hard limit to number of local players. 🖥️ Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 4,
+  "platforms": [
+    "PC",
+    "Steam",
+    "Xbox"
+  ],
+  "price": ""
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Operation Armstrong",
+  "originalComment": "Infiltration team game. 1 VR player navigates a level supported by a team of hackers which clear obstacles and disrupt enemies. \"Any number\" of hackers use phones as controllers. Separate screens.",
+  "reviewScore": 0,
+  "maxPlayers": 2,
+  "platforms": [
+    "PC",
+    "Steam",
+    "VR"
+  ],
+  "price": "$12.99"
+}
