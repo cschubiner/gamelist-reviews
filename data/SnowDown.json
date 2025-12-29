@@ -1,0 +1,12 @@
+{
+  "name": "SnowDown",
+  "originalComment": "2D artillery game for up to 12 local players. Phone/smart devices as controllers. 📱 12 phones using browsers. 🖥️ Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 12,
+  "platforms": [
+    "PC",
+    "Steam",
+    "VR"
+  ],
+  "price": ""
+}

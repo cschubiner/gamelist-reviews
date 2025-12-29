@@ -1,0 +1,11 @@
+{
+  "name": "reaktron",
+  "originalComment": "Snake/tron game with a bunch of new features for up to 12 local or remote players using keyboards, gamepads or phones as controllers. Shared screen.",
+  "reviewScore": 0,
+  "maxPlayers": 12,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": ""
+}

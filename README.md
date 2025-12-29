@@ -26,15 +26,15 @@ Browse and filter all games with the **[Interactive Game Browser](https://cschub
 
 ## Games Included
 
-Complete review data for 181 games in `/reviews/` directory, including:
+Complete review data for 189 games in `/reviews/` directory, including:
 
 - Super Slime Arena, The Jackbox Party Pack (multiple editions)
 - Mount Your Friends, PICO PARK, TowerClimb, Runbow
 - Party Jousting, Regular Human Basketball, MageQuit
 - Sea of Fatness, Photon Rush, Overlay, Stick Fight, and more
-- Plus 165 additional games covering diverse multiplayer genres
+- Plus 173 additional games covering diverse multiplayer genres
 
-See the **[Interactive Visualizer](https://cschubiner.github.io/gamelist_manyplayers/)** for the complete, sortable list of all 181 games.
+See the **[Interactive Visualizer](https://cschubiner.github.io/gamelist_manyplayers/)** for the complete, sortable list of all 189 games.
 
 ## Review Methodology
 
@@ -71,8 +71,8 @@ Reviews focus on:
 
 ```
 gamelist-reviews/
-├── reviews/              # 181 markdown review files
-├── data/                 # 181 JSON files with structured game data
+├── reviews/              # 189 markdown review files
+├── data/                 # 189 JSON files with structured game data
 ├── docs/
 │   └── index.html        # Interactive GitHub Pages visualizer
 └── README.md

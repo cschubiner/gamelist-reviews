@@ -1,0 +1,11 @@
+{
+  "name": "Scribble Plus",
+  "originalComment": "Drawing and guessing game. Custom wordlist support. Several game modes. Modifiers to make drawing trickier. Up to 8 local or online players. Each player uses a device with a browser. Separate screens.",
+  "reviewScore": 79,
+  "maxPlayers": 0,
+  "platforms": [
+    "PC",
+    "Steam"
+  ],
+  "price": ""
+}
