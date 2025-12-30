@@ -1,1 +1,13 @@
 .aider*
+
+# Logs
+*.log
+metadata_monitor.log
+
+# Python
+__pycache__/
+*.pyc
+
+# Temporary files
+*.tmp
+METADATA_EXTRACTION_REPORT.txt
